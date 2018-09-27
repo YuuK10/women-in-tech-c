@@ -7,7 +7,7 @@ int main(int argc, char **argv)
 	noecho();
 	if (argc == 2)
 	{
-		//load_level(argv[1])
+		load_level(argv[1]);
 	}
 	else if (argc > 2)
 		printf("Too many arguments...");
