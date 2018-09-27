@@ -3,6 +3,13 @@
 
 #include <ncurses.h>
 
+typedef	struct	s_sprites {
+	int	id;
+	char	*name;
+	char	sprites;
+}		t_sprites;
+
+
 void show_instructions();
 void show_error();
 
