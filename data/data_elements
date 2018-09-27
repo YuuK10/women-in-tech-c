@@ -1,0 +1,7 @@
+0	void		0	0
+1	spawn		0	0
+2	exit	exit	0	0
+3	wall	wall_1	0	1
+4	door	door_1	1	1
+5	door_open	door_open_1	0	0
+6	trap	trap_1	0	0
