@@ -6,7 +6,7 @@ all: $(NAME)
 
 $(NAME): 
 	gcc -c -I $(INCLUDES) $(SRC)
-	gcc -o $(NAME) *.o
+	gcc -o $(NAME) *.o -lncurses
 
 clean:
 	rm -rf *.o
