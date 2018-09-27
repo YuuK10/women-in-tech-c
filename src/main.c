@@ -5,9 +5,12 @@ int main(int argc, char **argv)
 {
 	initscr();
 	noecho();
+	
+	char **map_array;
+
 	if (argc == 2)
 	{
-		load_level(argv[1]);
+		load_level(argv[1], map_array);
 	}
 	else if (argc > 2)
 		printf("Too many arguments...");

@@ -1,7 +1,78 @@
 #include "game.h"
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 
-int load_level(char *level_name)
+t_vector2d get_map_dimensions(FILE *fp)
 {
-	show_error(-1);
-	return (0);
+	char c;
+	int column_counted;
+	t_vector2d dimensions;
+
+	dimensions.x = 0;
+	dimensions.y = 0;
+	column_counted = 0;
+
+	while(c != EOF)
+	{
+		c = fgetc(fp);
+		if (c == '\n')
+		{
+			dimensions.y++;
+			column_counted = 1;
+		}
+		if (!column_counted)
+			dimensions.x++;
+	}
+	return (dimensions);
+}
+
+int load_level(char *level_name, char** level_array)
+{
+	FILE *fp;
+	char *filename;
+	char *line = NULL;
+	size_t len = 0;
+	int read;
+	int current_line;
+	t_vector2d dimensions;
+
+	filename = strjoin("data/levels/", level_name);
+	fp = fopen(filename, "r");
+	free(filename);
+	if (fp == NULL)
+	{
+		show_error(-1);
+		return (0);
+	}
+
+	dimensions = get_map_dimensions(fp);
+	if (dimensions.x != map_dimensions.x || dimensions.y != map_dimensions.y)
+	{
+		printw("Found dimensions : %d x %d\n", dimensions.x, dimensions.y);
+		fclose(fp);
+		show_error(2); // Bad format error
+		return (0);
+	}
+	level_array = malloc(sizeof(char*) * map_dimensions.y);
+
+	current_line = 0;
+	fseek(fp, 0, SEEK_SET);
+	while(getline(&line, &len, fp) != -1)
+	{
+		level_array[current_line] = line;
+		line = NULL;
+		current_line++;
+	}
+
+	printw("The file has been read successfully !\n \
+			Dimensions : %d x %d\n\n", dimensions.x, dimensions.y);
+	for (int i = 0 ; i < dimensions.y ; i++)
+	{
+		printw("%s", level_array[i]);
+	}
+	refresh();
+	getch();
+	fclose(fp);
+	return (1);
 }
