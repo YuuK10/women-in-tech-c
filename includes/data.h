@@ -11,7 +11,10 @@ typedef	struct	s_game_element
 {
 	char	id;
 	char	*name;
+	char	*sprite_filename;
 	char	**sprite;
+	char	interractable;
+	char	blockable;
 }				t_game_element;
 
 typedef struct	s_player
