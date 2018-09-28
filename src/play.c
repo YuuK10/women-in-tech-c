@@ -6,7 +6,7 @@ void print_cell(t_vector2d position, char** sprite)
 	{
 		mvprintw(top_margin + (position.y + i) * cell_dimensions.y, \
 				left_margin + position.x * cell_dimensions.x, \
-				"%s", sprite[i]);
+				"%s", sprite[0]);
 	}
 }
 
@@ -22,7 +22,10 @@ void print_map(char **map_array, t_game_element **game_elements)
 		for (int x = 0 ; x < map_dimensions.x ; x++)
 		{
 			t_vector2d position = {x, y};
-			print_cell(position, find_element_by_id(map_array[y][x], game_elements)->sprite);
+			if (find_element_by_id(map_array[0][0], game_elements) == NULL)
+				printw("NULL");
+			//else
+			//	print_cell(position, find_element_by_id(map_array[0][0], game_elements)->sprite);
 		}
 	}
 }

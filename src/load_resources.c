@@ -17,22 +17,24 @@ int					load_resources(t_game_element **element_array)
 	line_count = count_file_lines(fd);
 	fseek(fd, 0, SEEK_SET);
 
-	element_array = malloc(line_count * sizeof(t_game_element*));
+	element_array = malloc((line_count + 1) * sizeof(t_game_element*));
 
 	file_line = NULL;
 	for (int i = 0 ; getline(&file_line, &len, fd) != -1 ; i++)
 	{
 		element_array[i] = split_data(file_line);
 		if (load_sprite(element_array[i]) == 0)
+		{
+			//fclose(fd);
 			return (0);
+		}
 		print_game_element(element_array[i]);
-		//if (resource != NULL)
-		//	print_game_element(resource);
-		free(file_line);
 	}
 
+	element_array[line_count] = NULL;
+
+	//fclose(fd);
 	free(file_line);
-	fclose(fd);
 	return (1);
 }
 
@@ -64,7 +66,6 @@ t_game_element		*split_data(char *data_string)
 	game_element->sprite_filename = strdup(data_element[2]);
 	game_element->interractable = *data_element[3];
 	game_element->blockable = *data_element[4];
-	print_game_element(game_element);
 	
 	return(game_element);
 }
@@ -78,9 +79,9 @@ void			print_game_element(t_game_element *game_element)
 	printw("sprite_filename : %s\n", game_element->sprite_filename);
 	printw("interractable : %c\n", game_element->interractable);
 	printw("blockable : %c\n\n", game_element->blockable);
-	for (int y = 0 ; y > cell_dimensions.y ; y++)
+	for (int y = 0 ; y < cell_dimensions.y ; y++)
 	{
-		printw("%s", game_element->sprite[y]);
+		printw("%s\n", game_element->sprite[y]);
 	}
 	refresh();
 	getch();

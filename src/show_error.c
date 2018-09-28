@@ -28,9 +28,9 @@ void show_error(int error_code)
 			printw("An unknown error has occured.\n\n");
 	}
 
-	printw("Error code : %d", error_code);
+	printw("Error code : %d\n", error_code);
 
-	printw("\nPress any key to exit");
+	printw("Press any key to exit");
 	refresh();
 	getch();
 }

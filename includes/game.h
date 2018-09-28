@@ -21,5 +21,6 @@ void 			show_error();
 int 			load_level(char *level_name, char** level_array);
 int				load_resources(t_game_element **element_array);
 int				load_sprite(t_game_element *element);
+void			play(char **map_array, t_game_element **game_elements);
 
 #endif
