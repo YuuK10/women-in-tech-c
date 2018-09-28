@@ -13,7 +13,7 @@ int	load_sprite(t_game_element *element, char *filename)
 {
 	char	*filepath;
 	char	*line;
-	size_t	*line_size;
+	size_t	line_size;
 	FILE	*file;
 
 	if (filename == NULL || element == NULL)
@@ -32,7 +32,7 @@ int	load_sprite(t_game_element *element, char *filename)
 		element->sprite[y] = malloc((cell_dimensions.x + 1) * sizeof(char));
 		for (int x = 0 ; x < cell_dimensions.x ; x++)
 		{
-			if(line[x] == NULL || line[x] == "\n")
+			if(line[x] == '\0' || line[x] == '\n')
 			{
 				fclose(file);
 				free(line);

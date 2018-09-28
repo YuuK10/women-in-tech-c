@@ -7,7 +7,7 @@ int	count_file_lines(FILE* file)
 
 	while ((character = fgetc(file)) != EOF)
 	{
-		if(character == "\n")
+		if(character == '\n')
 			count++;
 	}
 

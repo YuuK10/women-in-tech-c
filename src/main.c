@@ -7,12 +7,12 @@ int main(int argc, char **argv)
 	noecho();
 
 	char **map_array;
-	
+	t_game_element **elements;
 
 	if (argc == 2)
 	{
 		load_level(argv[1], map_array);
-		load_resources()
+		load_resources(elements);
 	}
 	else if (argc > 2)
 		printf("Too many arguments...");

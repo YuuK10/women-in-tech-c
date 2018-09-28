@@ -18,7 +18,7 @@ void show_error(int error_code)
 					Error code : 2");
 			break;
 		case 3: // Resource file not found
-			printw("Error while loading the level - ressource not found\n\n \
+			printw("Error while loading the resources - ressource not found\n\n \
 					Error code : 3");
 			break;
 		
