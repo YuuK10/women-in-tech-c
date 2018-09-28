@@ -10,11 +10,11 @@ typedef struct	s_vector2d
 typedef	struct	s_game_element
 {
 	char	id;
+	char	interractable;
+	char	blockable;
 	char	*name;
 	char	*sprite_filename;
 	char	**sprite;
-	char	interractable;
-	char	blockable;
 }				t_game_element;
 
 typedef struct	s_player
