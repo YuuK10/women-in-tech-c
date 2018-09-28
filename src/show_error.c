@@ -2,30 +2,33 @@
 
 void show_error(int error_code)
 {
+	erase();
 	switch (error_code)
 	{
 		case 0: // Bad level name
 			printw("Error while loading the level - level not found\n \
-					Did misstyped the name in the arguments ?\n\n \
-					Error code : 0");
+					Did you misstype the name in the arguments ?\n\n");
 			break;
 		case 1: // File permissions problem
-			printw("Error while loading the level - permission denied\n\n \
-					Error code : 1");
+			printw("Error while loading the level - permission denied\n\n");
 			break;
 		case 2: // Bad map format
-			printw("Error while loading the level - bad format\n\n \
-					Error code : 2");
+			printw("Error while loading the level - bad format\n\n");
 			break;
 		case 3: // Resource file not found
-			printw("Error while loading the resources - ressource not found\n\n \
-					Error code : 3");
+			printw("Error while loading resources - ressource not found");
 			break;
-		
+		case 4:
+			printw("Error while loading resources - cannot read sprite\n\n");
+			break;
+		case 5:
+			printw("Error while loading resources - bad sprite size\n\n");
+			break;
 		default:
 			printw("An unknown error has occured.\n\n");
-			printw("Error code : %d", error_code);
 	}
+
+	printw("Error code : %d", error_code);
 
 	printw("\nPress any key to exit");
 	refresh();
