@@ -19,8 +19,8 @@ typedef	struct	s_game_element
 
 typedef struct	s_player
 {
-	t_vector2d position;
-	char	**sprite;
+	t_vector2d	position;
+	char		**sprite;
 }				t_player;
 
 static const t_vector2d map_dimensions = {25, 20};
