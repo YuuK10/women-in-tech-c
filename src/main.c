@@ -5,14 +5,16 @@ int main(int argc, char **argv)
 {
 	initscr();
 	noecho();
+	raw();
 
 	char **map_array;
 	t_game_element **elements;
 
 	if (argc == 2)
 	{
-		load_level(argv[1], map_array);
-		load_resources(elements);
+		load_level(argv[1], &map_array);
+		load_resources(&elements);
+		play(map_array, elements);
 	}
 	else if (argc > 2)
 		printf("Too many arguments...");

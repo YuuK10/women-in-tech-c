@@ -1,7 +1,8 @@
 #include "game.h"
 
-int					load_resources(t_game_element **element_array)
+int					load_resources(t_game_element ***elements)
 {
+	t_game_element **element_array;
 	char			*file_line;
 	int				line_count;
 	size_t			len;
@@ -28,13 +29,13 @@ int					load_resources(t_game_element **element_array)
 			//fclose(fd);
 			return (0);
 		}
-		print_game_element(element_array[i]);
 	}
 
 	element_array[line_count] = NULL;
 
 	//fclose(fd);
 	free(file_line);
+	*elements = element_array;
 	return (1);
 }
 
