@@ -12,7 +12,7 @@
 int	load_sprite(t_game_element *element)
 {
 	char	*filepath;
-	char	*line;
+	char	*line = NULL;
 	size_t	line_size;
 	FILE	*file;
 
@@ -38,7 +38,8 @@ int	load_sprite(t_game_element *element)
 			if(line[x] == '\0' || line[x] == '\n')
 			{
 				fclose(file);
-				free(line);
+				if(line != NULL)
+					free(line);
 				show_error(5);
 				return (0);
 			}

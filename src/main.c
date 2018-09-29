@@ -12,9 +12,8 @@ int main(int argc, char **argv)
 
 	if (argc == 2)
 	{
-		load_level(argv[1], &map_array);
-		load_resources(&elements);
-		play(map_array, elements);
+		if (load_level(argv[1], &map_array) && load_resources(&elements))
+			play(map_array, elements);
 	}
 	else if (argc > 2)
 		printf("Too many arguments...");

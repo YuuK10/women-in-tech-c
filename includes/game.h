@@ -23,4 +23,6 @@ int				load_resources(t_game_element ***element_array);
 int				load_sprite(t_game_element *element);
 void			play(char **map_array, t_game_element **game_elements);
 
+t_vector2d		get_spawn_position(char **map_array, char spawn_id);
+
 #endif
