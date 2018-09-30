@@ -37,6 +37,8 @@ void play(char **map_array, t_game_element **game_elements)
 
 	t_player player;
 	player.sprite = find_element_by_name("player", game_elements)->sprite;
+		printw("bug dans play\n");
+		getch();
 	player.position = get_spawn_position(map_array, find_element_by_name("spawn", game_elements)->id);
 
 	/* Main loop */
@@ -47,7 +49,6 @@ void play(char **map_array, t_game_element **game_elements)
 		// TODO: Game logic
 
 		/* Printing */
-
 		print_map(map_array, game_elements);
 		print_player(&player);
 		

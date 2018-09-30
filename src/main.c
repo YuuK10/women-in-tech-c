@@ -9,11 +9,21 @@ int main(int argc, char **argv)
 
 	char **map_array;
 	t_game_element **elements;
+	int		i = 0;
 
 	if (argc == 2)
 	{
 		if (load_level(argv[1], &map_array) && load_resources(&elements))
+		{
+			//debbug
+			while (elements[i] != NULL)
+			{
+				print_game_element(elements[i]);
+				i = i + 1;
+			}
+			//fin debbug
 			play(map_array, elements);
+		}
 	}
 	else if (argc > 2)
 		printf("Too many arguments...");

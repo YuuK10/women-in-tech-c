@@ -40,6 +40,7 @@ int load_level(char *level_name, char*** level)
 
 	filename = strjoin("data/levels/", level_name);
 	fp = fopen(filename, "r");
+	//getch();
 	free(filename);
 	if (fp == NULL)
 	{

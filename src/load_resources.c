@@ -24,6 +24,11 @@ int					load_resources(t_game_element ***elements)
 	for (int i = 0 ; getline(&file_line, &len, fd) != -1 ; i++)
 	{
 		element_array[i] = split_data(file_line);
+		//debbug
+		//printw("name : %s\n", element_array[i]->name);
+		//printw("sprite_filename : %s\n", element_array[i]->sprite_filename);
+		//getch();
+		//fin debbug
 		if (load_sprite(element_array[i]) == 0)
 		{
 			//fclose(fd);
@@ -36,6 +41,8 @@ int					load_resources(t_game_element ***elements)
 	//fclose(fd);
 	free(file_line);
 	*elements = element_array;
+	//printw("j'ai fini de load les ressources\n");
+	//getch();
 	return (1);
 }
 
@@ -65,7 +72,7 @@ t_game_element		*split_data(char *data_string)
 	game_element->id = *data_element[0];
 	game_element->name = strdup(data_element[1]);
 	game_element->sprite_filename = strdup(data_element[2]);
-	game_element->interractable = *data_element[3];
+	game_element->behavior = strdup(data_element[3]);
 	game_element->blockable = *data_element[4];
 	
 	return(game_element);
@@ -78,7 +85,7 @@ void			print_game_element(t_game_element *game_element)
 	printw("id : %c\n", game_element->id);
 	printw("name : %s\n", game_element->name);
 	printw("sprite_filename : %s\n", game_element->sprite_filename);
-	printw("interractable : %c\n", game_element->interractable);
+	printw("interractable : %s\n", game_element->behavior);
 	printw("blockable : %c\n\n", game_element->blockable);
 	for (int y = 0 ; y < cell_dimensions.y ; y++)
 	{
