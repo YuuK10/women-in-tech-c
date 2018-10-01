@@ -45,3 +45,8 @@ t_vector2d		get_spawn_position(char **map_array, char spawn_id)
 
 	return (position);
 }
+
+t_game_element *get_element_at_position(t_vector2d position)
+{
+	return NULL;
+}

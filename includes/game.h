@@ -9,11 +9,13 @@
 #include <string.h>
 #include "utils.h"
 #include "data.h"
+#include "static.h"
+#include "logic_functions.h"
 
 #define	RESOURCE_PATH		"data/data_elements"
 #define	NUMBER_OF_ELEMENTS	5
 #define ASSETS_PATH		"data/assets/"
-//Peut etre un enum ici ?
+
 #define UP				1
 #define RIGHT			2
 #define	DOWN			3
