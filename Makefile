@@ -4,9 +4,9 @@ INCLUDES=includes
 
 all: $(NAME)
 
-$(NAME): 
+$(NAME):
 	gcc -c -I $(INCLUDES) $(SRC)
-	gcc -o $(NAME) *.o -lncurses
+	gcc -o $(NAME) *.o -lncurses -lpthread
 
 clean:
 	rm -rf *.o

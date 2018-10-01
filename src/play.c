@@ -36,16 +36,25 @@ void print_map(char **map_array, t_game_element **game_elements)
 
 void play(char **map_array, t_game_element **game_elements)
 {
-	int playing = 1;
-	int	game_status = 1;
-	int input;
+	int 		playing = 1;
+	int			game_status = 1;
+	int 		input;
+	pthread_t	init_player_action;
 
+	if(pthread_create(&init_player_action, NULL, play_thread, NULL) == -1)
+	{
+		show_error(6);
+	}
+	if (pthread_join(init_player_action, NULL))
+	{
+		show_error(99);
+	}
 
 	player.sprite = find_element_by_name("player", game_elements)->sprite;
 	player.position = get_spawn_position(map_array, \
 		find_element_by_name("spawn", game_elements)->id);
 
-	player_function();
+	//player_function();
 
 	clock_t time = clock();
 
