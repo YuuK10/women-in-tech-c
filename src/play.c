@@ -44,15 +44,22 @@ void play(char **map_array, t_game_element **game_elements)
 	int 		playing = 1;
 	int			game_status = 1;
 	int 		input;
+	int			thread_done = 0;
 	pthread_t	init_player_action;
+	clock_t time = clock();
 
-	if(pthread_create(&init_player_action, NULL, play_thread, NULL) == -1)
+	if(pthread_create(&init_player_action, NULL, play_thread, &thread_done) == -1)
 	{
 		show_error(6);
 	}
-	if (pthread_join(init_player_action, NULL))
+	while ((clock() - time) * 1000 / CLOCKS_PER_SEC < 1000 && thread_done == 0)
 	{
-		show_error(99);
+
+	}
+	if (thread_done == 0)
+	{
+		//kill that thread
+		pthread_cancel(init_player_action);
 	}
 
 	player.sprite = find_element_by_name("player", game_elements)->sprite;
@@ -62,7 +69,7 @@ void play(char **map_array, t_game_element **game_elements)
 	t_vector2d exit_pos = get_pos_by_id(map_array,
 		find_element_by_name("exit", game_elements)->id);
 
-	clock_t time = clock();
+	time = clock();
 
 	/* Main loop */
 	while (playing)
