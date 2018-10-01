@@ -27,7 +27,7 @@ t_game_element *find_element_by_name(char *name, t_game_element **elements)
 	return (NULL);
 }
 
-t_vector2d		get_spawn_position(char **map_array, char spawn_id)
+t_vector2d		get_pos_by_id(char **map_array, char spawn_id)
 {
 	t_vector2d position = {-1, -1};
 	for (int y = 0 ; y < map_dimensions.y ; y++)

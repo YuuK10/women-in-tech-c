@@ -1,26 +1,34 @@
 #include "game.h"
 
+int	is_victorious(t_vector2d exit_pos)
+{
+	if (exit_pos.x == player.position.x && exit_pos.y == player.position.y)
+		return (1);
+	else
+		return (0);
+}
+
 void exec_walk_up(char **map_array, t_game_element **game_elements)
 {
 	if (player.position.y != 0 &&
-		!find_element_by_id(map_array[player.position.y - 1][player.position.x], \
-			game_elements)->blockable)
+		find_element_by_id(map_array[player.position.y - 1][player.position.x], \
+			game_elements)->blockable == '0')
 		player.position.y--;
 }
 
 void exec_walk_down(char **map_array, t_game_element **game_elements)
 {
 	if (player.position.y != map_dimensions.y - 1 &&
-		!find_element_by_id(map_array[player.position.y + 1][player.position.x], \
-			game_elements)->blockable)
+		find_element_by_id(map_array[player.position.y + 1][player.position.x], \
+			game_elements)->blockable == '0')
 		player.position.y++;
 }
 
 void exec_walk_left(char **map_array, t_game_element **game_elements)
 {
 	if (player.position.x != 0 &&
-		!find_element_by_id(map_array[player.position.y][player.position.x - 1], \
-			game_elements)->blockable)
+		find_element_by_id(map_array[player.position.y][player.position.x - 1], \
+			game_elements)->blockable == '0')
 		player.position.x--;
 }
 

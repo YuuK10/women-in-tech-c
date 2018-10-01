@@ -19,3 +19,10 @@ void	walk(int direction)
 			break;
 	}
 }
+
+void 	*play_thread(void *arg)
+{
+	player_function();
+	(void) arg;
+	pthread_exit(NULL);
+}
