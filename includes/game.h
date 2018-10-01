@@ -33,10 +33,9 @@ int				load_resources(t_game_element ***element_array);
 int				load_sprite(t_game_element *element);
 void			play(char **map_array, t_game_element **game_elements);
 void			player_function();
+int				is_victorious(t_vector2d exit_pos);
 
 void			append_action(t_action_type action, char *arg);
-
-t_vector2d		get_spawn_position(char **map_array, char spawn_id);
 
 void 			*play_thread(void *arg);
 

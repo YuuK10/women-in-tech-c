@@ -2,20 +2,8 @@
 
 void player_function()
 {
-	walk(RIGHT);
-	walk(UP);
-	walk(LEFT);
-	walk(DOWN);
-	walk(RIGHT);
-	walk(UP);
-	walk(LEFT);
-	walk(DOWN);
-	walk(RIGHT);
-	walk(UP);
-	walk(LEFT);
-	walk(DOWN);
-	walk(RIGHT);
-	walk(UP);
-	walk(LEFT);
-	walk(DOWN);
+	for (int i = 0 ; i < 25 ; i++)
+	{
+		walk(RIGHT);
+	}
 }

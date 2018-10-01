@@ -1,5 +1,13 @@
 #include "game.h"
 
+int	is_victorious(t_vector2d exit_pos)
+{
+	if (exit_pos.x == player.position.x && exit_pos.y == player.position.y)
+		return (1);
+	else
+		return (0);
+}
+
 void exec_walk_up(char **map_array, t_game_element **game_elements)
 {
 	if (player.position.y != 0 &&
