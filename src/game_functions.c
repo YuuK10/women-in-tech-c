@@ -20,10 +20,27 @@ void	walk(int direction)
 	}
 }
 
+void	open_door(int direction)
+{
+	switch (direction)
+	{
+		case LEFT:
+			append_action(OPEN_DOOR_LEFT, NULL);
+			break;
+		case RIGHT:
+			append_action(OPEN_DOOR_RIGHT, NULL);
+			break;
+		case UP:
+			append_action(OPEN_DOOR_UP, NULL);
+			break;
+		case DOWN:
+			append_action(OPEN_DOOR_DOWN, NULL);
+			break;
+	}
+}
+
 void 	*play_thread(void *arg)
 {
-	//printw("Je suis dans le thread et j'execute player_function()\n");
-	//getch();
 	player_function();
 	(void) arg;
 	pthread_exit(NULL);

@@ -6,7 +6,8 @@
 #define	DOWN			3
 #define LEFT			4
 
-void walk(int direction);
+void	walk(int direction);
+void	open_door(int direction);
 
 
 #endif

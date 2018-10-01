@@ -6,7 +6,11 @@ typedef enum	e_action_type
 	WALK_LEFT,
 	WALK_RIGHT,
 	WALK_UP,
-	WALK_DOWN
+	WALK_DOWN,
+	OPEN_DOOR_LEFT,
+	OPEN_DOOR_RIGHT,
+	OPEN_DOOR_UP,
+	OPEN_DOOR_DOWN
 }				t_action_type;
 
 typedef struct	s_vector2d

@@ -2,6 +2,11 @@
 
 void player_function()
 {
-	while (1)
-		walk(RIGHT);
+	walk(RIGHT);
+	walk(RIGHT);
+	open_door(RIGHT);
+	walk(RIGHT);
+	walk(RIGHT);
+	walk(RIGHT);
+	walk(RIGHT);
 }

@@ -4,6 +4,11 @@ t_game_action *action_list = NULL;
 t_game_action *last_action = NULL;
 t_player player;
 
+void print_victory()
+{
+	mvprintw(0, 0, "VICTORY BBY !");
+}
+
 void print_cell(t_vector2d position, char** sprite)
 {
 	for (int i = 0 ; i < cell_dimensions.y ; i++)
@@ -51,10 +56,11 @@ void play(char **map_array, t_game_element **game_elements)
 	}
 
 	player.sprite = find_element_by_name("player", game_elements)->sprite;
-	player.position = get_spawn_position(map_array, \
+	player.position = get_pos_by_id(map_array, \
 		find_element_by_name("spawn", game_elements)->id);
 
-	//player_function();
+	t_vector2d exit_pos = get_pos_by_id(map_array,
+		find_element_by_name("exit", game_elements)->id);
 
 	clock_t time = clock();
 
@@ -67,13 +73,21 @@ void play(char **map_array, t_game_element **game_elements)
 		if (game_status && delta_time >= EXEC_DELAY)
 		{
 			time = clock();
-			exec_next(map_array, game_elements);
+
+			if (!is_victorious(exit_pos))
+				exec_next(map_array, game_elements);
 		}
 
 		/* Printing */
+
 		print_map(map_array, game_elements);
 		print_player();
 		print_menu(game_status);
+
+		if (is_victorious(exit_pos))
+		{
+			print_victory();
+		}
 
 		refresh();
 
