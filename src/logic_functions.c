@@ -33,3 +33,47 @@ void exec_walk_right(char **map_array, t_game_element **game_elements)
 		player.position.x++;
 	}
 }
+
+void	exec_open_door_right(char **map_array, t_game_element **game_elements)
+{
+	if (player.position.x != map_dimensions.x - 1 &&
+		strcmp(find_element_by_id(map_array[player.position.y][player.position.x + 1],
+		game_elements)->behavior, "door") == 0)
+		{
+			map_array[player.position.y][player.position.x + 1] =
+				find_element_by_name("door_open", game_elements)->id;
+		}
+}
+
+void	exec_open_door_left(char **map_array, t_game_element **game_elements)
+{
+	if (player.position.x != 0 &&
+		strcmp(find_element_by_id(map_array[player.position.y][player.position.x - 1],
+		game_elements)->behavior, "door") == 0)
+		{
+			map_array[player.position.y][player.position.x - 1] =
+				find_element_by_name("door_open", game_elements)->id;
+		}
+}
+
+void	exec_open_door_up(char **map_array, t_game_element **game_elements)
+{
+	if (player.position.y != 0 &&
+		strcmp(find_element_by_id(map_array[player.position.y - 1][player.position.x],
+		game_elements)->behavior, "door") == 0)
+		{
+			map_array[player.position.y - 1][player.position.x] =
+				find_element_by_name("door_open", game_elements)->id;
+		}
+}
+
+void	exec_open_door_down(char **map_array, t_game_element **game_elements)
+{
+	if (player.position.y != map_dimensions.x - 1 &&
+		strcmp(find_element_by_id(map_array[player.position.y + 1][player.position.x],
+		game_elements)->behavior, "door") == 0)
+		{
+			map_array[player.position.y + 1][player.position.x] =
+				find_element_by_name("door_open", game_elements)->id;
+		}
+}
