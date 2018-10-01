@@ -16,10 +16,11 @@
 #include "logic_functions.h"
 
 
-#define	RESOURCE_PATH		"data/data_elements"
-#define	NUMBER_OF_ELEMENTS	5
-#define EXEC_DELAY			500
-#define ASSETS_PATH			"data/assets/"
+#define	RESOURCE_PATH				"data/data_elements"
+#define	NUMBER_OF_ELEMENTS			5
+#define EXEC_DELAY					500
+#define ASSETS_PATH					"data/assets/"
+#define TIMEOUT_PLAYER_FUNCTION		5 //in seconds
 
 
 #define	PAUSED			0
