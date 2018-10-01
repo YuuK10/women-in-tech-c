@@ -46,9 +46,6 @@ void play(char **map_array, t_game_element **game_elements)
 		find_element_by_name("spawn", game_elements)->id);
 
 	player_function();
-	print_map(map_array, game_elements);
-	print_player();
-	print_menu(game_status);
 
 	/* Main loop */
 	while (playing)
