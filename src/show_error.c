@@ -24,6 +24,9 @@ void show_error(int error_code)
 		case 5:
 			printw("Error while loading resources - bad sprite size\n\n");
 			break;
+		case 6 :
+			printw("Error while creating thread\n\n");
+			break;
 		default:
 			printw("An unknown error has occured.\n\n");
 	}

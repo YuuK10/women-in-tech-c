@@ -19,3 +19,12 @@ void	walk(int direction)
 			break;
 	}
 }
+
+void 	*play_thread(void *arg)
+{
+	//printw("Je suis dans le thread et j'execute player_function()\n");
+	//getch();
+	player_function();
+	(void) arg;
+	pthread_exit(NULL);
+}
