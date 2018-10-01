@@ -33,6 +33,7 @@ void print_map(char **map_array, t_game_element **game_elements)
 void play(char **map_array, t_game_element **game_elements)
 {
 	int playing = 1;
+	int	game_status = 1;
 	int input;
 
 
@@ -44,17 +45,26 @@ void play(char **map_array, t_game_element **game_elements)
 	while (playing)
 	{
 		erase();
-		/* Game logic */
-		// TODO: Game logic
+
+		if (game_status)
+		{
+			/* Game logic */
+			// TODO: Game logic
+		}
 
 		/* Printing */
 		print_map(map_array, game_elements);
 		print_player(&player);
+		print_menu(game_status);
 
 		refresh();
 
 		input = getch();
 		if (input == 'q')
 			playing = 0;
+		else if (input == 'p' && game_status == 1)
+			game_status = 0;
+		else if (input == 'p' && game_status == 0)
+			game_status = 1;
 	}
 }

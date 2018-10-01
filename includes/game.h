@@ -20,7 +20,7 @@
 #define RIGHT			2
 #define	DOWN			3
 #define LEFT			4
-#define PAUSE			0
+#define	PAUSED			0
 
 
 void 			show_instructions();
