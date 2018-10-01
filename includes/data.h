@@ -1,6 +1,14 @@
 #ifndef DATA_H
 # define DATA_H
 
+typedef enum	e_action_type
+{
+	MOVE_LEFT,
+	MOVE_RIGHT,
+	MOVE_UP,
+	MOVE_DOWN
+}				t_action_type;
+
 typedef struct	s_vector2d
 {
 	int x;
@@ -22,6 +30,13 @@ typedef struct	s_player
 	t_vector2d	position;
 	char		**sprite;
 }				t_player;
+
+typedef struct	s_game_action
+{
+	t_action_type			type;
+	char					*arg;
+	struct s_game_action	*next;
+}				t_game_action;
 
 static const t_vector2d map_dimensions = {25, 20};
 static const t_vector2d cell_dimensions = {7, 4};
