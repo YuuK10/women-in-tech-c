@@ -2,8 +2,11 @@
 
 void player_function()
 {
-	for (int i = 0 ; i < 25 ; i++)
-	{
-		walk(RIGHT);
-	}
+	walk(RIGHT);
+	walk(RIGHT);
+	open_door(RIGHT);
+	walk(RIGHT);
+	walk(RIGHT);
+	walk(RIGHT);
+	walk(RIGHT);
 }
