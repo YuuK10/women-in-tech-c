@@ -38,6 +38,6 @@ int				is_victorious(t_vector2d exit_pos);
 
 void			append_action(t_action_type action, char *arg);
 
-void 			*play_thread(void *arg);
+void 			*play_thread(void *thread_done);
 
 #endif

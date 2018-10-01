@@ -48,7 +48,7 @@ void play(char **map_array, t_game_element **game_elements)
 	pthread_t	init_player_action;
 	clock_t time = clock();
 
-	if(pthread_create(&init_player_action, NULL, play_thread, &thread_done) == -1)
+	if(pthread_create(&init_player_action, NULL, &play_thread, &thread_done) == -1)
 	{
 		show_error(6);
 	}
