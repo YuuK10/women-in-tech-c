@@ -4,7 +4,7 @@ int main(int argc, char **argv)
 {
 	initscr();
 	noecho();
-	timeout(0);
+	timeout(-1);
 	raw();
 
 	char **map_array;

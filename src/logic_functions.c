@@ -27,7 +27,9 @@ void exec_walk_left(char **map_array, t_game_element **game_elements)
 void exec_walk_right(char **map_array, t_game_element **game_elements)
 {
 	if (player.position.x != map_dimensions.x - 1 &&
-		!find_element_by_id(map_array[player.position.y][player.position.x + 1], \
-			game_elements)->blockable)
+		find_element_by_id(map_array[player.position.y][player.position.x + 1], \
+			game_elements)->blockable == '0')
+	{
 		player.position.x++;
+	}
 }

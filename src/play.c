@@ -1,5 +1,9 @@
 #include "game.h"
 
+t_game_action *action_list = NULL;
+t_game_action *last_action = NULL;
+t_player player;
+
 void print_cell(t_vector2d position, char** sprite)
 {
 	for (int i = 0 ; i < cell_dimensions.y ; i++)
@@ -10,9 +14,9 @@ void print_cell(t_vector2d position, char** sprite)
 	}
 }
 
-void print_player(t_player *player)
+void print_player()
 {
-	print_cell(player->position, player->sprite);
+	print_cell(player.position, player.sprite);
 }
 
 void print_map(char **map_array, t_game_element **game_elements)
@@ -41,6 +45,11 @@ void play(char **map_array, t_game_element **game_elements)
 	player.position = get_spawn_position(map_array, \
 		find_element_by_name("spawn", game_elements)->id);
 
+	player_function();
+	print_map(map_array, game_elements);
+	print_player();
+	print_menu(game_status);
+
 	/* Main loop */
 	while (playing)
 	{
@@ -54,7 +63,7 @@ void play(char **map_array, t_game_element **game_elements)
 
 		/* Printing */
 		print_map(map_array, game_elements);
-		print_player(&player);
+		print_player();
 		print_menu(game_status);
 
 		refresh();
