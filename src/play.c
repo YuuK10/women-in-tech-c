@@ -49,7 +49,7 @@ void play(char **map_array, t_game_element **game_elements)
 		if (game_status)
 		{
 			/* Game logic */
-			// TODO: Game logic
+			exec_next(map_array, game_elements);
 		}
 
 		/* Printing */
