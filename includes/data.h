@@ -6,17 +6,6 @@ typedef struct	s_vector2d
 	int x;
 	int y;
 }				t_vector2d;
-/*
-typedef	struct	s_game_element
-{
-	char	id;
-	char	blockable;
-	char	*behavior;
-	char	*name;
-	char	*sprite_filename;
-	char	**sprite;
-}				t_game_element;
-*/
 
 typedef struct	s_game_element
 {
@@ -26,7 +15,7 @@ typedef struct	s_game_element
 	char	*name;
 	char	*sprite_filename;
 	char	**sprite;
-}		t_game_element;
+}				t_game_element;
 
 typedef struct	s_player
 {

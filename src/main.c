@@ -15,13 +15,6 @@ int main(int argc, char **argv)
 	{
 		if (load_level(argv[1], &map_array) && load_resources(&elements))
 		{
-			//debbug
-			while (elements[i] != NULL)
-			{
-				print_game_element(elements[i]);
-				i = i + 1;
-			}
-			//fin debbug
 			play(map_array, elements);
 		}
 	}

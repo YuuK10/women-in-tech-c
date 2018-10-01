@@ -21,13 +21,9 @@ t_game_element *find_element_by_name(char *name, t_game_element **elements)
 
 	for (int i = 0 ; elements[i] != NULL ; i++)
 	{
-		printw("element[%d] : %s\n", i, elements[i]->name);
-		getch();
 		if (strcmp(elements[i]->name, name) == 0)
 			return (elements[i]);
 	}
-	printw("je renvois null avec le nom : %s\n", name);
-	getch();
 	return (NULL);
 }
 
