@@ -39,9 +39,9 @@ void	open_door(int direction)
 	}
 }
 
-void 	*play_thread(void *arg)
+void 	*play_thread(int *thread_done)
 {
 	player_function();
-	(void) arg;
+	thread_done = 1;
 	pthread_exit(NULL);
 }
