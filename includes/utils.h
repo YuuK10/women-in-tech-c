@@ -12,5 +12,6 @@ t_game_element	*find_element_by_name(char *name, t_game_element **game_elements)
 t_game_element	*split_data(char *data_string);
 
 void			print_game_element(t_game_element *game_element);
+void			print_menu(int game_status);
 
 #endif

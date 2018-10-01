@@ -14,10 +14,11 @@
 #define	NUMBER_OF_ELEMENTS	5
 #define ASSETS_PATH		"data/assets/"
 //Peut etre un enum ici ?
-#define UP			1
+#define UP				1
 #define RIGHT			2
 #define	DOWN			3
 #define LEFT			4
+#define	PAUSED			0
 
 
 void 			show_instructions();
