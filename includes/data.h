@@ -3,10 +3,10 @@
 
 typedef enum	e_action_type
 {
-	MOVE_LEFT,
-	MOVE_RIGHT,
-	MOVE_UP,
-	MOVE_DOWN
+	WALK_LEFT,
+	WALK_RIGHT,
+	WALK_UP,
+	WALK_DOWN
 }				t_action_type;
 
 typedef struct	s_vector2d

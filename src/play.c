@@ -35,7 +35,7 @@ void play(char **map_array, t_game_element **game_elements)
 	int playing = 1;
 	int input;
 
-	t_player player;
+
 	player.sprite = find_element_by_name("player", game_elements)->sprite;
 	player.position = get_spawn_position(map_array, \
 		find_element_by_name("spawn", game_elements)->id);
