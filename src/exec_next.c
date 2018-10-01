@@ -2,9 +2,12 @@
 
 void exec_next(char **map_array, t_game_element **game_elements)
 {
-	if (last_action != NULL)
+	t_game_action *action;
+	if (action_list != NULL)
 	{
-		switch (last_action->type)
+		action = action_list;
+
+		switch (action->type)
 		{
 			case WALK_LEFT:
 				exec_walk_left(map_array, game_elements);
@@ -19,5 +22,8 @@ void exec_next(char **map_array, t_game_element **game_elements)
 				exec_walk_down(map_array, game_elements);
 				break;
 		}
+
+		action_list = action->next;
+		free(action);
 	}
 }
