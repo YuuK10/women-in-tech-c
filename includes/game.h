@@ -10,7 +10,7 @@
 #include "utils.h"
 #include "data.h"
 #include "static.h"
-#include "logic_functions.h"
+#include "logic_functions.c"
 
 #define	RESOURCE_PATH		"data/data_elements"
 #define	NUMBER_OF_ELEMENTS	5
@@ -20,6 +20,7 @@
 #define RIGHT			2
 #define	DOWN			3
 #define LEFT			4
+#define PAUSE			0
 
 
 void 			show_instructions();
