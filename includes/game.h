@@ -7,6 +7,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 #include "utils.h"
 #include "data.h"
 #include "static.h"
@@ -15,7 +16,8 @@
 
 #define	RESOURCE_PATH		"data/data_elements"
 #define	NUMBER_OF_ELEMENTS	5
-#define ASSETS_PATH		"data/assets/"
+#define EXEC_DELAY			500
+#define ASSETS_PATH			"data/assets/"
 
 
 #define	PAUSED			0

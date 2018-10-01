@@ -47,14 +47,17 @@ void play(char **map_array, t_game_element **game_elements)
 
 	player_function();
 
+	clock_t time = clock();
+
 	/* Main loop */
 	while (playing)
 	{
+		clock_t delta_time = (clock() - time) * 1000 / CLOCKS_PER_SEC;
 		erase();
 
-		if (game_status)
+		if (game_status && delta_time >= EXEC_DELAY)
 		{
-			/* Game logic */
+			time = clock();
 			exec_next(map_array, game_elements);
 		}
 
