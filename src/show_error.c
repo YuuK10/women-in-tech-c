@@ -41,7 +41,7 @@ void show_error(int error_code)
 
 	printw("Press any key to exit");
 	refresh();
-	timeout(0);
-	getch();
 	timeout(-1);
+	getch();
+	timeout(0);
 }
