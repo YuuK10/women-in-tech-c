@@ -42,6 +42,15 @@ typedef struct	s_game_action
 	struct s_game_action	*next;
 }				t_game_action;
 
+typedef struct	s_level_list
+{
+	char				*name;
+	char				status;
+	char				*max_line_count;
+
+	struct s_level_list	*next;
+}				t_level_list;
+
 static const t_vector2d map_dimensions = {25, 20};
 static const t_vector2d cell_dimensions = {7, 4};
 static const int left_margin = 0; // Margin between the map and the screen's edges
