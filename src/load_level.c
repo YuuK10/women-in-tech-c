@@ -3,33 +3,8 @@
 #include <string.h>
 #include <stdlib.h>
 
-t_level_list	**level_list = NULL;
+t_level_element	**level_list = NULL;
 char			*level_name = NULL;
-
-int			load_level_list()
-{
-	FILE	*fp;
-	int		line_count;
-	char	*line;
-	size_t	len;
-
-	fp = fopen(LEVEL_LIST_PATH, "r");
-	if (fp == NULL)
-	{
-		show_error(7);
-		return (0);
-	}
-
-	line_count = count_file_lines(fp);
-	fseek(fp, 0, SEEK_SET);
-
-	level_list = malloc((line_count + 1) * sizeof(t_level_list*));
-	for (int i = 0 ; getline(&line, &len, fp) != -1 ; i++)
-		level_list[i] = split_level_data(line);
-
-	fclose(fp);
-	return (1);
-}
 
 t_level_element	*split_level_data(char *data_string)
 {
@@ -62,6 +37,31 @@ t_level_element	*split_level_data(char *data_string)
 	return (level_element);
 }
 
+int			load_level_list()
+{
+	FILE	*fp;
+	int		line_count;
+	char	*line;
+	size_t	len;
+
+	fp = fopen(LEVEL_LIST_PATH, "r");
+	if (fp == NULL)
+	{
+		show_error(7);
+		return (0);
+	}
+
+	line_count = count_file_lines(fp);
+	fseek(fp, 0, SEEK_SET);
+
+	level_list = malloc((line_count + 1) * sizeof(t_level_element*));
+	for (int i = 0 ; getline(&line, &len, fp) != -1 ; i++)
+		level_list[i] = split_level_data(line);
+
+	fclose(fp);
+	return (1);
+}
+
 t_vector2d		get_map_dimensions(FILE *fp)
 {
 	char c;
@@ -86,7 +86,7 @@ t_vector2d		get_map_dimensions(FILE *fp)
 	return (dimensions);
 }
 
-int			load_level(char *level, char*** level)
+int			load_level(char *level, char ***map_array)
 {
 	char **level_array;
 	FILE *fp;
@@ -99,8 +99,8 @@ int			load_level(char *level, char*** level)
 
 	level_name = level;
 
-	if (!load_level_list())
-		return (0);
+//	if (load_level_list() == 0)
+//		return (0);
 
 	filename = strjoin("data/levels/", level_name);
 	fp = fopen(filename, "r");
@@ -131,6 +131,6 @@ int			load_level(char *level, char*** level)
 	}
 
 	fclose(fp);
-	*level = level_array;
+	*map_array = level_array;
 	return (1);
 }
