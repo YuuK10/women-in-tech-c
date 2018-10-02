@@ -77,12 +77,10 @@ void play(char **map_array, t_game_element **game_elements)
 		clock_t delta_time = (clock() - time) * 1000 / CLOCKS_PER_SEC;
 		erase();
 
-		if (game_status && delta_time >= EXEC_DELAY)
+		if (game_status && delta_time >= EXEC_DELAY && !is_victorious(exit_pos))
 		{
 			time = clock();
-
-			if (!is_victorious(exit_pos))
-				exec_next(map_array, game_elements);
+			exec_next(map_array, game_elements);
 		}
 
 		/* Printing */
@@ -93,6 +91,7 @@ void play(char **map_array, t_game_element **game_elements)
 
 		if (is_victorious(exit_pos))
 		{
+			get_level_by_name(level_name)->status = '1';
 			print_victory();
 		}
 
@@ -106,4 +105,6 @@ void play(char **map_array, t_game_element **game_elements)
 		else if (input == 'p' && game_status == 0)
 			game_status = 1;
 	}
+
+	save_level_list();
 }
