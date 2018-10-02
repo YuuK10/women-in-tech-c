@@ -9,8 +9,8 @@ void show_error(int error_code)
 			printw("Error while loading the level - level not found\n \
 					Did you misstype the name in the arguments ?\n\n");
 			break;
-		case 1: // File permissions problem
-			printw("Error while loading the level - permission denied\n\n");
+		case 1: // File problems
+			printw("Error while loading the level - cannot open the level\n\n");
 			break;
 		case 2: // Bad map format
 			printw("Error while loading the level - bad format\n\n");
@@ -18,14 +18,20 @@ void show_error(int error_code)
 		case 3: // Resource file not found
 			printw("Error while loading resources - ressource not found");
 			break;
-		case 4:
+		case 4: // Sprite problem
 			printw("Error while loading resources - cannot read sprite\n\n");
 			break;
-		case 5:
+		case 5: // Sprite size not fitting the map cells
 			printw("Error while loading resources - bad sprite size\n\n");
 			break;
-		case 6 :
+		case 6: // Thread error
 			printw("Error while creating thread\n\n");
+			break;
+		case 7: // Cannot open data_level
+			printw("Error while loading level - cannot open data levels file");
+			break;
+		case 8: // Cannot write data_level
+			printw("Error while saving level - cannot write to levels file");
 			break;
 		default:
 			printw("An unknown error has occured.\n\n");

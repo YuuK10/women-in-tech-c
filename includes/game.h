@@ -17,9 +17,10 @@
 
 
 #define	RESOURCE_PATH				"data/data_elements"
+#define ASSETS_PATH					"data/assets/"
+#define LEVEL_LIST_PATH				"data/data_levels"
 #define	NUMBER_OF_ELEMENTS			5
 #define EXEC_DELAY					500
-#define ASSETS_PATH					"data/assets/"
 #define TIMEOUT_PLAYER_FUNCTION		5 //in seconds
 
 

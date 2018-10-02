@@ -2,7 +2,7 @@
 
 int					load_resources(t_game_element ***elements)
 {
-	t_game_element **element_array;
+	t_game_element	**element_array;
 	char			*file_line;
 	int				line_count;
 	size_t			len;

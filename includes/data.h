@@ -42,14 +42,12 @@ typedef struct	s_game_action
 	struct s_game_action	*next;
 }				t_game_action;
 
-typedef struct	s_level_list
+typedef struct	s_level_element
 {
 	char				*name;
 	char				status;
 	char				*max_line_count;
-
-	struct s_level_list	*next;
-}				t_level_list;
+}				t_level_element;
 
 static const t_vector2d map_dimensions = {25, 20};
 static const t_vector2d cell_dimensions = {7, 4};
