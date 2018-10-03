@@ -6,7 +6,23 @@ t_player player;
 
 void print_victory()
 {
-	mvprintw(0, 0, "VICTORY BBY !");
+	/*FILE *fd;
+	char *line;
+	size_t len;
+
+	fd = fopen(VICTORY_FILE, "r");
+	if (fd == NULL)
+	{*/
+		mvprintw(0, 0, "Level complete !");
+		return;
+	/*}
+	move(3, 0);
+	while (getline(&line, &len, fd) != -1)
+	{
+		printw(line);
+	}
+
+	fclose(fd);*/
 }
 
 void print_cell(t_vector2d position, char** sprite)
@@ -52,7 +68,7 @@ void play(char **map_array, t_game_element **game_elements)
 	{
 		show_error(6);
 	}
-	while ((clock() - time) * 1000 / CLOCKS_PER_SEC < 1000 && thread_done == 0)
+	while ((clock() - time) * 1000 / CLOCKS_PER_SEC < TIMEOUT_PLAYER_FUNCTION && thread_done == 0)
 	{
 
 	}

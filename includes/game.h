@@ -19,9 +19,10 @@
 #define	RESOURCE_PATH				"data/data_elements"
 #define ASSETS_PATH					"data/assets/"
 #define LEVEL_LIST_PATH				"data/data_level"
+#define VICTORY_FILE				"data/assets/victory"
 #define	NUMBER_OF_ELEMENTS			5
-#define EXEC_DELAY					500
-#define TIMEOUT_PLAYER_FUNCTION		5 //in seconds
+#define EXEC_DELAY					300
+#define TIMEOUT_PLAYER_FUNCTION		500 //in ms
 
 
 #define	PAUSED			0
