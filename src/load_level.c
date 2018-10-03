@@ -6,6 +6,28 @@
 t_level_element	**level_list = NULL;
 char			*level_name = NULL;
 
+int				check_level_availability(char *level_name)
+{
+	int i;
+	int available;
+	int found;
+
+	i = 0;
+	available = 1;
+	found = 0;
+
+	while (level_list[i] != NULL)
+	{
+		if (strcmp(level_list[i]->name, level_name) == 0)
+			return (1);
+		if (level_list[i]->status == '0')
+			return (0);
+		i++;
+	}
+
+	return (0);
+}
+
 t_level_element	*split_level_data(char *data_string)
 {
 	t_level_element	*level_element;
@@ -58,6 +80,8 @@ int			load_level_list()
 	for (int i = 0 ; getline(&line, &len, fp) != -1 ; i++)
 		level_list[i] = split_level_data(line);
 
+	level_list[line_count] = NULL;
+
 	fclose(fp);
 	return (1);
 }
@@ -99,8 +123,14 @@ int			load_level(char *level, char ***map_array)
 
 	level_name = level;
 
-//	if (load_level_list() == 0)
-//		return (0);
+	if (load_level_list() == 0)
+		return (0);
+
+	if (!check_level_availability(level))
+	{
+		show_error(9);
+		return (0);
+	}
 
 	filename = strjoin("data/levels/", level_name);
 	fp = fopen(filename, "r");

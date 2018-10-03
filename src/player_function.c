@@ -2,6 +2,7 @@
 
 void player_function()
 {
-	while (1)
+	for (int i = 0; i < 25 ; i++)
 		walk(RIGHT);
+
 }

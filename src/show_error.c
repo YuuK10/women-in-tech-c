@@ -28,10 +28,13 @@ void show_error(int error_code)
 			printw("Error while creating thread\n\n");
 			break;
 		case 7: // Cannot open data_level
-			printw("Error while loading level - cannot open data levels file");
+			printw("Error while loading level - cannot open data levels file\n\n");
 			break;
 		case 8: // Cannot write data_level
-			printw("Error while saving level - cannot write to levels file");
+			printw("Error while saving level - cannot write to levels file\n\n");
+			break;
+		case 9: // Cannot write data_level
+			printw("This level is still locked (or is inexistant).\nAre you trying to cheat, you little asshole ? x)\n\n");
 			break;
 		default:
 			printw("An unknown error has occured.\n\n");
