@@ -27,15 +27,15 @@ t_game_element *find_element_by_name(char *name, t_game_element **elements)
 	return (NULL);
 }
 
-t_level_element	*get_level_by_name(char *name, t_level_element **level)
+t_level_element	*get_level_by_name(char *name)
 {
-	if (level == NULL || level[0] == NULL)
+	if (level_list == NULL || level_list[0] == NULL)
 		return (NULL);
 
-	for (int i = 0 ; level[i] != NULL ; i++)
+	for (int i = 0 ; level_list[i] != NULL ; i++)
 	{
-		if (strcmp(level[i]->name, name) == 0)
-			return (level[i]);
+		if (strcmp(level_list[i]->name, name) == 0)
+			return (level_list[i]);
 	}
 	return (NULL);
 }
