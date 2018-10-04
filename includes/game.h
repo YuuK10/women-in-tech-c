@@ -39,6 +39,11 @@ void			player_function();
 int				is_victorious(t_vector2d exit_pos);
 int				save_level_list();
 
+void 			print_victory();
+void 			print_cell(t_vector2d position, char** sprite);
+void 			print_player();
+void 			print_map(char **map_array, t_game_element **game_elements);
+
 void			append_action(t_action_type action, char *arg);
 
 void 			*play_thread(void *thread_done);
