@@ -153,8 +153,10 @@ int			load_level(char *level, char ***map_array)
 	level_name = level;
 
 	if (!load_level_list() ||
-		!check_level_availability() ||
 		!check_file_line_count())
+		return (0);
+
+	if (!DEVELOPER_MODE && !check_level_availability())
 		return (0);
 
 	filename = strjoin("data/levels/", level_name);
