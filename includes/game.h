@@ -24,7 +24,7 @@
 #define	NUMBER_OF_ELEMENTS			5
 #define EXEC_DELAY					300
 #define TIMEOUT_PLAYER_FUNCTION		200 //in ms
-#define DEVELOPER_MODE				1
+#define DEVELOPER_MODE				0
 
 
 #define	PAUSED			0

@@ -6,8 +6,7 @@ void show_error(int error_code)
 	switch (error_code)
 	{
 		case 0: // Bad level name
-			printw("Error while loading the level - level not found\n \
-					Did you misstype the name in the arguments ?\n\n");
+			printw("Error while loading the level - level not found\n\n");
 			break;
 		case 1: // File problems
 			printw("Error while loading the level - cannot open the level\n\n");

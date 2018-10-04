@@ -9,6 +9,7 @@ char			*level_name = NULL;
 int				check_file_line_count()
 {
 	FILE *fd;
+	t_level_element *level;
 	int line_count;
 	int max;
 
@@ -20,7 +21,13 @@ int				check_file_line_count()
 	}
 
 	line_count = count_file_lines(fd);
-	max = atoi(get_level_by_name(level_name)->max_line_count);
+	if ((level = get_level_by_name(level_name)) == NULL)
+	{
+		show_error(0);
+		return (0);
+	}
+
+	max = atoi(level->max_line_count);
 
 	if (line_count > max && max > 0)
 	{
@@ -152,8 +159,10 @@ int			load_level(char *level, char ***map_array)
 
 	level_name = level;
 
-	if (!load_level_list() ||
-		!check_file_line_count())
+	if (!load_level_list())
+		return (0);
+
+	if (!check_file_line_count())
 		return (0);
 
 	if (!DEVELOPER_MODE && !check_level_availability())
