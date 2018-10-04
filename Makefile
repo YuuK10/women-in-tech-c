@@ -5,13 +5,13 @@ INCLUDES=includes
 all: $(NAME)
 
 $(NAME):
-	gcc -c -I $(INCLUDES) $(SRC)
-	gcc -o $(NAME) *.o -lncurses -lpthread
+	@gcc -c -I $(INCLUDES) $(SRC)
+	@gcc -o $(NAME) *.o -lncurses -lpthread
 
 clean:
-	rm -rf *.o
+	@rm -rf *.o 2>&1 > /dev/null
 
 fclean: clean
-	rm -rf $(NAME)
+	@rm -rf $(NAME) 2>&1 > /dev/null
 
-re: fclean, all
+re: fclean all
