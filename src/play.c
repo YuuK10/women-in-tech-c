@@ -30,6 +30,7 @@ void play(char **map_array, t_game_element **game_elements)
 	player.sprite = find_element_by_name("player", game_elements)->sprite;
 	player.position = get_pos_by_id(map_array, \
 		find_element_by_name("spawn", game_elements)->id);
+	player.color_pair = find_element_by_name("player", game_elements)->color_pair;
 
 	t_vector2d exit_pos = get_pos_by_id(map_array,
 		find_element_by_name("exit", game_elements)->id);

@@ -3,6 +3,7 @@
 int main(int argc, char **argv)
 {
 	initscr();
+	start_color();
 	noecho();
 	raw();
 

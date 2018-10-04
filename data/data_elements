@@ -1,9 +1,9 @@
-0	void	void	null	0
-1	spawn	spawn	null	0
-2	exit	exit	null	0
-3	wall	wall_1	null	1
-4	door	door_close_1	door	1
-5	door_open	door_open_3	null	0
-6	trap	trap_1	trap	0
-7	trap2	trap_2	trap	0
-P	player	owl	null	0
+0	void	void	null	0	FFFFFF	000000
+1	spawn	void	null	0	FFFFFF	000000
+2	exit	exit	null	0	FFFFFF	000000
+3	wall	wall_1	null	1	800000	000000
+4	door	door_close_1	door	1	FFFFFF	000000
+5	door_open	door_open_1	null	0	FFFFFF	000000
+6	trap	trap_1	trap	0	FFFFFF	000000
+7	trap2	trap_2	null	0	FFFFFF	000000
+P	player	owl	null	0	FFFF00	FF0000

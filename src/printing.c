@@ -21,19 +21,21 @@ void print_victory()
 	fclose(fd);*/
 }
 
-void print_cell(t_vector2d position, char** sprite)
+void print_cell(t_vector2d position, char** sprite, int pair)
 {
+	attron(COLOR_PAIR(pair));
 	for (int i = 0 ; i < cell_dimensions.y ; i++)
 	{
 		mvprintw(top_margin + position.y * cell_dimensions.y + i, \
 				left_margin + position.x * cell_dimensions.x, \
 				"%s", sprite[i]);
 	}
+	attroff(COLOR_PAIR(pair));
 }
 
 void print_player()
 {
-	print_cell(player.position, player.sprite);
+	print_cell(player.position, player.sprite, player.color_pair);
 }
 
 void print_map(char **map_array, t_game_element **game_elements)
@@ -46,7 +48,10 @@ void print_map(char **map_array, t_game_element **game_elements)
 			if (find_element_by_id(map_array[y][x], game_elements) == NULL)
 				printw("NULL");
 			else
-				print_cell(position, find_element_by_id(map_array[y][x], game_elements)->sprite);
+			{
+				t_game_element *element = find_element_by_id(map_array[y][x], game_elements);
+				print_cell(position, element->sprite, element->color_pair);
+			}
 		}
 	}
 }
