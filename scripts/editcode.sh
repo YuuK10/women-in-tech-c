@@ -1,5 +1,5 @@
 #!/bin/sh
-game_path="/Users/lsiquet/Documents/Projects/women-in-tech-c/"
+__GAME_PATH__
 cd $game_path
 player_file_path="src/"
 player_sample_path="sample/$(cat ../data/current_level)"
