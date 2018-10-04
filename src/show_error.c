@@ -36,6 +36,12 @@ void show_error(int error_code)
 		case 9: // Cannot write data_level
 			printw("This level is still locked (or is inexistant).\nAre you trying to cheat, you little asshole ? x)\n\n");
 			break;
+		case 10:
+			printw("Error while checking player function - cannot open file\n\n");
+			break;
+		case 11:
+			printw("Too many lines in the player function file.\nYou may try to find a way to reduce it a bit :)\n\n");
+			break;
 		default:
 			printw("An unknown error has occured.\n\n");
 	}

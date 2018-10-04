@@ -6,7 +6,32 @@
 t_level_element	**level_list = NULL;
 char			*level_name = NULL;
 
-int				check_level_availability(char *level_name)
+int				check_file_line_count()
+{
+	FILE *fd;
+	int line_count;
+	int max;
+
+	fd = fopen(PLAYER_FUNCTION_FILE, "r");
+	if (fd == NULL)
+	{
+		show_error(10);
+		return (0);
+	}
+
+	line_count = count_file_lines(fd);
+	max = atoi(get_level_by_name(level_name)->max_line_count);
+
+	if (line_count > max && max > 0)
+	{
+		show_error(11);
+		return (0);
+	}
+
+	return (1);
+}
+
+int				check_level_availability()
 {
 	int i;
 	int available;
@@ -21,10 +46,14 @@ int				check_level_availability(char *level_name)
 		if (strcmp(level_list[i]->name, level_name) == 0)
 			return (1);
 		if (level_list[i]->status == '0')
+		{
+			show_error(9);
 			return (0);
+		}
 		i++;
 	}
 
+	show_error(9);
 	return (0);
 }
 
@@ -123,18 +152,13 @@ int			load_level(char *level, char ***map_array)
 
 	level_name = level;
 
-	if (load_level_list() == 0)
+	if (!load_level_list() ||
+		!check_level_availability() ||
+		!check_file_line_count())
 		return (0);
-
-	if (!check_level_availability(level))
-	{
-		show_error(9);
-		return (0);
-	}
 
 	filename = strjoin("data/levels/", level_name);
 	fp = fopen(filename, "r");
-	//getch();
 	free(filename);
 	if (fp == NULL)
 	{
