@@ -19,10 +19,20 @@ typedef struct	s_vector2d
 	int y;
 }				t_vector2d;
 
+typedef struct	s_color
+{
+	unsigned char r;
+	unsigned char g;
+	unsigned char b;
+}				t_color;
+
 typedef struct	s_game_element
 {
 	char	id;
 	char	blockable;
+	t_color	foreground_color;
+	t_color	background_color;
+	int		color_pair;
 	char	*behavior;
 	char	*name;
 	char	*sprite_filename;
@@ -32,6 +42,7 @@ typedef struct	s_game_element
 typedef struct	s_player
 {
 	t_vector2d	position;
+	int			color_pair;
 	char		**sprite;
 }				t_player;
 
@@ -52,6 +63,6 @@ typedef struct	s_level_element
 static const t_vector2d map_dimensions = {25, 20};
 static const t_vector2d cell_dimensions = {7, 4};
 static const int left_margin = 0; // Margin between the map and the screen's edges
-static const int top_margin = -1;
+static const int top_margin = 3;
 
 #endif

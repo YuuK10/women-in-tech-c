@@ -23,7 +23,7 @@
 #define PLAYER_FUNCTION_FILE		"src/player_function.c"
 #define	NUMBER_OF_ELEMENTS			5
 #define EXEC_DELAY					300
-#define TIMEOUT_PLAYER_FUNCTION		500 //in ms
+#define TIMEOUT_PLAYER_FUNCTION		200 //in ms
 
 
 #define	PAUSED			0
@@ -41,7 +41,7 @@ int				is_victorious(t_vector2d exit_pos);
 int				save_level_list();
 
 void 			print_victory();
-void 			print_cell(t_vector2d position, char** sprite);
+void 			print_cell(t_vector2d position, char** sprite, int pair);
 void 			print_player();
 void 			print_map(char **map_array, t_game_element **game_elements);
 
