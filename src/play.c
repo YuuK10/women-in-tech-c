@@ -7,6 +7,8 @@ t_player player;
 void play(char **map_array, t_game_element **game_elements)
 {
 	int 		playing = 1;
+	int			fast_forward = 0;
+	int			exec_delay = EXEC_DELAY;
 	int			game_status = 1;
 	int 		input;
 	int			thread_done = 0;
@@ -44,7 +46,7 @@ void play(char **map_array, t_game_element **game_elements)
 		clock_t delta_time = (clock() - time) * 1000 / CLOCKS_PER_SEC;
 		erase();
 
-		if (game_status && delta_time >= EXEC_DELAY && !is_victorious(exit_pos))
+		if (game_status && delta_time >= exec_delay && !is_victorious(exit_pos))
 		{
 			time = clock();
 			exec_next(map_array, game_elements);
@@ -67,6 +69,11 @@ void play(char **map_array, t_game_element **game_elements)
 		input = getch();
 		if (input == 'q')
 			playing = 0;
+		else if (input == 'f')
+		{
+			fast_forward = !fast_forward;
+			exec_delay = fast_forward ? FAST_FORWARD_DELAY : EXEC_DELAY;
+		}
 		else if (input == 'p' && game_status == 1)
 			game_status = 0;
 		else if (input == 'p' && game_status == 0)
