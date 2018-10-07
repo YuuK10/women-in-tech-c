@@ -43,8 +43,10 @@ void 			print_victory();
 void 			print_cell(t_vector2d position, char** sprite, int pair);
 void 			print_player();
 void 			print_map(char **map_array, t_game_element **game_elements);
+void 			print_action_bar();
+void			update_action_text();
 
-void			append_action(t_action_type action, char *arg);
+void			append_action(t_action_type action, char *text);
 
 void 			*play_thread(void *thread_done);
 void			free_map(char **map_array);

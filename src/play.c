@@ -1,5 +1,6 @@
 #include "game.h"
 
+t_game_action *first_action = NULL;
 t_game_action *action_list = NULL;
 t_game_action *last_action = NULL;
 t_player player;
@@ -39,6 +40,14 @@ int	play(char **map_array, t_game_element **game_elements)
 	t_vector2d exit_pos = get_pos_by_id(map_array,
 		find_element_by_name("exit", game_elements)->id);
 
+	last_action_text = NULL;
+	current_action_text = "BEGIN";
+	if (action_list != NULL)
+		next_action_text = action_list->text;
+	else
+		next_action_text = "END";
+
+
 	time = clock();
 	timeout(0);
 
@@ -59,6 +68,7 @@ int	play(char **map_array, t_game_element **game_elements)
 		print_map(map_array, game_elements);
 		print_player();
 		print_menu(paused, fast_forward);
+		print_action_bar();
 
 		if (is_victorious(exit_pos))
 		{

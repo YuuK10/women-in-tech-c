@@ -1,5 +1,24 @@
 #include "game.h"
 
+void update_action_text()
+{
+	if (action_list != NULL)
+	{
+		last_action_text = current_action_text;
+		current_action_text = action_list->text;
+		if (action_list->next != NULL)
+			next_action_text = action_list->next->text;
+		else
+			next_action_text = "END";
+	}
+	else
+	{
+		last_action_text = current_action_text;
+		current_action_text = "END";
+		next_action_text = NULL;
+	}
+}
+
 void exec_next(char **map_array, t_game_element **game_elements)
 {
 	t_game_action *action;
@@ -36,6 +55,8 @@ void exec_next(char **map_array, t_game_element **game_elements)
 		}
 
 		action_list = action->next;
-		free(action);
+		update_action_text();
+
+		//free(action);
 	}
 }

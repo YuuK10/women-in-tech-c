@@ -49,7 +49,7 @@ typedef struct	s_player
 typedef struct	s_game_action
 {
 	t_action_type			type;
-	char					*arg;
+	char					*text;
 	struct s_game_action	*next;
 }				t_game_action;
 

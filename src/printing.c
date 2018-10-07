@@ -1,5 +1,19 @@
 #include "game.h"
 
+char *last_action_text = NULL;
+char *current_action_text = "BEGIN";
+char *next_action_text = NULL;
+
+void print_action_bar()
+{
+	if (last_action_text != NULL)
+		mvprintw(80, 10, last_action_text);
+	if (current_action_text != NULL)
+		mvprintw(81, 12, current_action_text);
+	if (next_action_text != NULL)
+		mvprintw(82, 10, next_action_text);
+}
+
 void print_victory()
 {
 	/*FILE *fd;

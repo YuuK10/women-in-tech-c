@@ -6,7 +6,7 @@ void clear_actions()
 	t_game_action *next;
 	if (action_list != NULL)
 	{
-		current = action_list;
+		current = first_action;
 		while (current != NULL)
 		{
 			next = current->next;
