@@ -34,7 +34,7 @@ void 			show_error();
 int 			load_level(char *level_name, char*** level_array);
 int				load_resources(t_game_element ***element_array);
 int				load_sprite(t_game_element *element);
-void			play(char **map_array, t_game_element **game_elements);
+int				play(char **map_array, t_game_element **game_elements);
 void			player_function();
 int				is_victorious(t_vector2d exit_pos);
 int				save_level_list();
@@ -47,5 +47,7 @@ void 			print_map(char **map_array, t_game_element **game_elements);
 void			append_action(t_action_type action, char *arg);
 
 void 			*play_thread(void *thread_done);
+void			free_map(char **map_array);
+void			clear_actions();
 
 #endif

@@ -21,6 +21,22 @@ void print_victory()
 	fclose(fd);*/
 }
 
+void	print_menu(int paused, int fast_forward)
+{
+	if (paused)
+		mvprintw(1, 1, "P : Resume game");
+	else
+		mvprintw(1, 1, "P : Pause game");
+
+	if (!fast_forward)
+		mvprintw(1, 25, "F : Fast forward");
+	else
+		mvprintw(1, 25, "F : Normal speed");
+
+	mvprintw(1, 50, "R : Replay");
+	mvprintw(1, 75, "Q : Quit");
+}
+
 void print_cell(t_vector2d position, char** sprite, int pair)
 {
 	attron(COLOR_PAIR(pair));

@@ -4,9 +4,10 @@ t_game_action *action_list = NULL;
 t_game_action *last_action = NULL;
 t_player player;
 
-void play(char **map_array, t_game_element **game_elements)
+int	play(char **map_array, t_game_element **game_elements)
 {
 	int 		playing = 1;
+	int			restart = 0;
 	int			fast_forward = 0;
 	int			exec_delay = EXEC_DELAY;
 	int			paused = 0;
@@ -18,6 +19,7 @@ void play(char **map_array, t_game_element **game_elements)
 	if(pthread_create(&init_player_action, NULL, &play_thread, &thread_done) == -1)
 	{
 		show_error(6);
+		return (0);
 	}
 	while ((clock() - time) * 1000 / CLOCKS_PER_SEC < TIMEOUT_PLAYER_FUNCTION && thread_done == 0)
 	{
@@ -76,7 +78,14 @@ void play(char **map_array, t_game_element **game_elements)
 		}
 		else if (input == 'p')
 			paused = !paused;
+		else if (input == 'r')
+		{
+			restart = 1;
+			clear_actions();
+			playing = 0;
+		}
 	}
 
 	save_level_list();
+	return (restart);
 }

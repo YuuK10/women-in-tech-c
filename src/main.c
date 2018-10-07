@@ -2,20 +2,25 @@
 
 int main(int argc, char **argv)
 {
+	char			**map_array;
+	t_game_element	**elements;
+	int				i = 0;
+	int				playing = 1;
+
 	initscr();
 	start_color();
 	noecho();
 	raw();
 
-	char **map_array;
-	t_game_element **elements;
-	int		i = 0;
-
-	if (argc == 2)
+	if (argc == 2 && load_resources(&elements))
 	{
-		if (load_level(argv[1], &map_array) && load_resources(&elements))
+		while (playing)
 		{
-			play(map_array, elements);
+			if (load_level(argv[1], &map_array))
+			{
+				playing = play(map_array, elements);
+				free_map(map_array);
+			}
 		}
 	}
 	else if (argc > 2)
