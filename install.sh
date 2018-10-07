@@ -29,6 +29,7 @@ echo "alias editcode='$game_path/scripts/editcode.sh'" >> ~/.zshrc
 echo "alias howtoplay='$game_path/scripts/howtoplay.sh'" >> ~/.zshrc
 echo "alias nextlevel='$game_path/scripts/nextlevel.sh'" >> ~/.zshrc
 echo "alias resetlevel='$game_path/scripts/resetlevel.sh'" >> ~/.zshrc
+echo "alias resetgame='$game_path/scripts/resetgame.sh'" >> ~/.zshrc
 source ~/.zshrc
 reset
 echo "Installation complete."
