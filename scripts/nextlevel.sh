@@ -14,7 +14,7 @@ then
 
 	if [[ "$next_level_name" = "$lvl" ]]
 	then
-		less data/levels/docs/victory
+		cat data/levels/docs/victory | less
 	else
     	echo $next_level_name > data/current_level
     	echo "Next level : $next_level_name"
