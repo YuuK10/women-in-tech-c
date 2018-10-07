@@ -28,9 +28,6 @@
 #define DEVELOPER_MODE				0
 
 
-#define	PAUSED			0
-
-
 void 			show_instructions();
 void 			show_error();
 

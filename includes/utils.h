@@ -18,6 +18,6 @@ t_game_element	*split_data(char *data_string);
 t_color			hexa_to_color(char *hexa);
 
 void			print_game_element(t_game_element *game_element);
-void			print_menu(int game_status);
+void			print_menu(int paused, int fast_forward);
 
 #endif
