@@ -1,4 +1,5 @@
 #!/bin/sh
+
 __GAME_PATH__
 cd $game_path
 
