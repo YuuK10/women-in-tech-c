@@ -24,7 +24,7 @@ then
     	sample_path="data/samples/"
 
     	mv src/player_function.c "${save_path}${lvl}.c"
-    	cp "${sample_path}${lvl}.c" src/player_function.c
+    	cp "${sample_path}${next_level_name}.c" src/player_function.c
 	fi
 else
     echo "You did not finish the current level yet."
