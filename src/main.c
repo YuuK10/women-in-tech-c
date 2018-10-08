@@ -11,6 +11,7 @@ int main(int argc, char **argv)
 	start_color();
 	noecho();
 	raw();
+	//curs_set(1);
 
 	if (argc == 2 && load_level(argv[1], &map_array) && load_resources(&elements))
 	{
@@ -19,7 +20,13 @@ int main(int argc, char **argv)
 			playing = play(map_array, elements);
 			free_map(map_array);
 			if (playing)
-				load_level(argv[1], &map_array);
+			{
+				if (!load_level(argv[1], &map_array))
+				{
+					show_error(1);
+					playing = 0;
+				}
+			}
 		}
 	}
 	else if (argc > 2)

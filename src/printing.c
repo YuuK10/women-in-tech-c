@@ -16,23 +16,11 @@ void print_action_bar()
 
 void print_victory()
 {
-	/*FILE *fd;
-	char *line;
-	size_t len;
-
-	fd = fopen(VICTORY_FILE, "r");
-	if (fd == NULL)
-	{*/
-		mvprintw(0, 0, "Level complete !");
-		return;
-	/*}
-	move(3, 0);
-	while (getline(&line, &len, fd) != -1)
-	{
-		printw(line);
-	}
-
-	fclose(fd);*/
+	/*mvprintw(0, 0, "Level complete !");*/
+	mvprintw(79, 5, " __   _____ ___ _____ ___  _____   __  _");
+	mvprintw(80, 5, " \\ \\ / /_ _/ __|_   _/ _ \\| _ \\ \\ / / | |");
+	mvprintw(81, 5, "  \\ V / | | (__  | || (_) |   /\\ V /  |_|");
+	mvprintw(82, 5, "   \\_/ |___\\___| |_| \\___/|_|_\\ |_|   (_)");
 }
 
 void	print_menu(int paused, int fast_forward)

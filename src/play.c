@@ -70,11 +70,14 @@ int	play(char **map_array, t_game_element **game_elements)
 		print_menu(paused, fast_forward);
 		print_action_bar();
 
+		move(81, 10);
 		if (is_victorious(exit_pos))
 		{
 			get_level_by_name(level_name)->status = '1';
 			print_victory();
+			move(83, 0);
 		}
+
 
 		refresh();
 
