@@ -102,6 +102,9 @@ int			load_level_list()
 	char	*line;
 	size_t	len;
 
+	if (level_list != NULL)
+		return (1);
+
 	fp = fopen(LEVEL_LIST_PATH, "r");
 	if (fp == NULL)
 	{

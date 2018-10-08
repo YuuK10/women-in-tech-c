@@ -9,11 +9,11 @@ game_path=$(pwd)
 game_path_exp=$(sed 's/\//\\\//g' <<< $game_path)
 expr="s/.*__GAME_PATH__/game_path=\'${game_path_exp}\/\'/"
 
-if [[ "$uname" == "Darwin" ]]; then
+#if [[ "$uname" == "Darwin" ]]; then
 	sed -i "" ${expr} scripts/*
-else
-	sed -i ${expr} scripts/*
-fi
+#else
+#	sed -i ${expr} scripts/*
+#fi
 
 echo "Creating saves directory..."
 mkdir data/saves

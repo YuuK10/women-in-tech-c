@@ -54,9 +54,19 @@ void exec_next(char **map_array, t_game_element **game_elements)
 				break;
 		}
 
-		action_list = action->next;
 		update_action_text();
+		action_list = action->next;
+
 
 		//free(action);
+	}
+	
+	/*
+		Ce code est absolument degueulasse !
+		Je coooode avec le cuuuuul...
+	*/
+	else if (strcmp(current_action_text, "END") != 0)
+	{
+		update_action_text();
 	}
 }
