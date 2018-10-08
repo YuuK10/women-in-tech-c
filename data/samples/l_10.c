@@ -19,6 +19,8 @@ void player_function()
 	while (iterator <= 20) //While iterator is < or = 20, do the following code
 	{
 		//Maybe something is missing to complete the level...
+		//At each execution of the loop, the iterator will increment,
+		//until it reaches finally 20 and exit the loop
 		iterator = iterator + 1;
 	}
 }
