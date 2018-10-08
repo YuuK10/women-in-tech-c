@@ -16,7 +16,7 @@ expr="s/.*__GAME_PATH__/game_path=\'${game_path_exp}\/\'/"
 #fi
 
 echo "Creating saves directory..."
-mkdir data/saves
+mkdir data/saves 2>&1 > /dev/null
 
 echo "Initializing game..."
 rm src/player_function.c 2>&1 > /dev/null
@@ -30,6 +30,7 @@ echo "alias howtoplay='$game_path/scripts/howtoplay.sh'" >> ~/.zshrc
 echo "alias nextlevel='$game_path/scripts/nextlevel.sh'" >> ~/.zshrc
 echo "alias resetlevel='$game_path/scripts/resetlevel.sh'" >> ~/.zshrc
 echo "alias resetgame='$game_path/scripts/resetgame.sh'" >> ~/.zshrc
-source ~/.zshrc
-reset
-echo "Installation complete."
+
+echo "\n\n\033[0;32mInstallation complete. Please restart the terminal to play.\n"
+echo "\033[0;33mNote : to activate the developper mode, you can turn the DEVELOPPER_MODE"
+echo "macro to 1 in includes/game.h"
