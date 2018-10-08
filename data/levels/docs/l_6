@@ -1,22 +1,25 @@
-Well, well, well...
-This next level should remind you something. It's a good opportunity to
-learn something new !
+Do you have a good memory ?
+Archimede does. (Of course, it is Archimede.)
 
-In C language, they're are may tools you can use to simplify your coder life.
-This includes what we call LOOPS.
+You can ask her to remember things by using VARIABLES.
+Variables are kind of containers that will contain an information (a number,
+a character, binary data, and so on...).
 
-A loop is a piece of code that will be executed as long as a condition verified.
-A condition can be, for instance :
+First, you need to tell her the name of your variable. This is called
+VARIABLE DECLARATION, and you can to it this way :
 
-	variable == 1	-> Is the variable equal to 1 ?
-	variable > 19	-> Is the variable greater than 19 ?
-	variable < 42	-> Is the variable smaller than 42 ?
-	variable >= 101	-> Is the variable greater than or equal to 101 ?
-	variable <= 0	-> Is the variable smaller than or equal to 0 ?
+	int name_of_my_variable;
 
-Of course, this variable can be modified during the loop. And it actually will
-often be the case, with INCREMENTED VARIABLES. You will have a proper example
-in the code.
+A variable name should always start with a letter, and should only contain
+lowercase or uppercase letters, numbers, and underscores (_).
+
+You have then to give it a value. This is the funniest part.
+
+	name_of_my_variable = 19
+
+And BIM, name_of_my_variable now contains the best number of the world !
+You will see a very practical example in the code of this level.
+
 
 
 
