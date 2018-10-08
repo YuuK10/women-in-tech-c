@@ -4,12 +4,12 @@ __GAME_PATH__
 cd $game_path
 
 lvl=$(cat data/current_level)
-level_line=$(grep $lvl data/data_level)
+level_line=$(grep -m 1 $lvl data/data_level)
 level_status=$(echo $level_line | cut -f2)
 
 if [[ "$level_status" == '1' ]]
 then
-    next_level_line=$(grep -A 1 $lvl data/data_level | tail -n 1)
+    next_level_line=$(grep -A 1 $lvl data/data_level | head -n 2 | tail -n 1)
     next_level_name=$(echo $next_level_line | cut -f1)
 
 	if [[ "$next_level_name" = "$lvl" ]]
