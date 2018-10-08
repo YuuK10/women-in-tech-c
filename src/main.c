@@ -12,15 +12,14 @@ int main(int argc, char **argv)
 	noecho();
 	raw();
 
-	if (argc == 2 && load_resources(&elements))
+	if (argc == 2 && load_level(argv[1], &map_array) && load_resources(&elements))
 	{
 		while (playing)
 		{
-			if (load_level(argv[1], &map_array))
-			{
-				playing = play(map_array, elements);
-				free_map(map_array);
-			}
+			playing = play(map_array, elements);
+			free_map(map_array);
+			if (playing)
+				load_level(argv[1], &map_array);
 		}
 	}
 	else if (argc > 2)
