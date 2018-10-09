@@ -23,7 +23,7 @@
 #define PLAYER_FUNCTION_FILE		"src/player_function.c"
 #define	NUMBER_OF_ELEMENTS			5
 #define EXEC_DELAY					400
-#define TIMEOUT_PLAYER_FUNCTION		200 //in ms
+#define TIMEOUT_PLAYER_FUNCTION		100 //in ms
 #define FAST_FORWARD_DELAY			100
 #define DEVELOPER_MODE				0
 

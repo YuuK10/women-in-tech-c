@@ -1,9 +1,9 @@
 #include "game.h"
 
-t_game_action *first_action = NULL;
-t_game_action *action_list = NULL;
-t_game_action *last_action = NULL;
-t_player player;
+t_game_action	*first_action = NULL;
+t_game_action	*action_list = NULL;
+t_game_action	*last_action = NULL;
+t_player		player;
 
 int	play(char **map_array, t_game_element **game_elements)
 {
@@ -15,6 +15,7 @@ int	play(char **map_array, t_game_element **game_elements)
 	int 		input;
 	int			thread_done = 0;
 	pthread_t	init_player_action;
+
 	clock_t time = clock();
 
 	if(pthread_create(&init_player_action, NULL, &play_thread, &thread_done) == -1)
@@ -29,7 +30,9 @@ int	play(char **map_array, t_game_element **game_elements)
 	if (thread_done == 0)
 	{
 		//kill that thread
-		pthread_cancel(init_player_action);
+		endwin();
+		write(2, "timeout", 7);
+		pthread_kill(init_player_action, SIGTERM);
 	}
 
 	player.sprite = find_element_by_name("player", game_elements)->sprite;
