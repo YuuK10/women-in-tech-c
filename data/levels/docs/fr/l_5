@@ -1,14 +1,12 @@
 
-			|================================|
-			|   Authorized line count : 10   | 
-			|================================|
+			|====================================|
+			|   Nombre de ligne autoriser : 10   |
+			|====================================|
 
-Damn someone made a mess in this code... could you clean it?
-Remember you can delete multiple line in a single command
-by writing the number of line you want to delete and 'dd'
+Et ben.. quelqu'un a tout mis sans dessus dessous dans ce code..
+Pouvez-vous arranger ca?
 
-By the way we find a paper with "room 5 - 10" written on it, i don't
-know what it mean but it seems important..
+N'oubliez pas vous pouvez supprimer plusieurs ligne en ecrivant
+le nombre de ligne suivis de 'dd' (10dd supprimera 10 lignes)
 
-
-Press Q to quit.
+Appuyer sur Q pour quitter.

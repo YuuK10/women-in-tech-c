@@ -1,46 +1,34 @@
-Oh, damn ! It looks like Archimede the owl is stuck into a labyrinth.
-She definitly needs your help to get out of it ! Would you please
-tell her what she needs to do ? This is pretty easy, just write her
-simple indications so she can follow them step by step.
+Oh mince ! Il semblerait qu’Archimedes la chouette soit bloquée dans un labyrinthe. Elle a besoin de votre aide pour s’en sortir ! Pouvez-vous lui dire ce qu’elle doit faire ? C’est plutôt simple, il suffit de lui écrire des indications simple qu’elle pourra suivre étape par étape.
 
-By the way, she only understands the C language. Oh, you don't know it ?
-Well... you better be a fast learner !
+Par contre elle ne comprend que le langage C. Vous ne le connaissez pas? Et bien… j’espère que vous apprenez vite…
 
-For each level of this game, you will have to follow a few steps :
+Pour chaque niveau de ce jeu, vous devrez suivre quelque étape :
 
-	- Look at the level's map
-	- Type the code
-	- Test it
-	- Type the code again (would't be fun if it was a one shot, right ?)
-	- Retest it
-	- ...
-	- Did Archimede finally found a way out ? Great, then go to the next level.
+	- Regarder la carte de chaque niveau
+	- Ecrire le code
+	- Le tester
+	- Ecrire le code encore (ce serait bien si ca fonctionnait du premier coup, non?)
+	- Retester le code
+	- …
+	- Archimede a atteint la fin du niveau ? Bien, go au niveau suivant.
 
-To achieve this, you will need a few commands to type in the terminal (you know,
-this ugly black window think where you can type text in) :
-
-howtoplay	Well obviously, you already know it, since you're reading this.
-		You should read the howtoplay for each level (like, really). It 
-		may provide you some really nice informations to complete it.
-
-editcode	This command will open the file where to write your code.
-
-playgame	This one will... launch the game. Surprising, huh ? Of course,
-		you may launch it once before typing the code, so you can see
-		what the level looks like.
-
-nextlevel	If Archimede got to the exit, you may type this command to go
-		to the next level.
-
-Pretty easy, isn't it ? 
-
-Ok, no more speech, let's get into action. Leave this page by pressing the Q letter
-on your keyboard, then type "editcode" (without the quotes, of course) in the
-terminal, and let's make the magic happen together.
+	Pour arriver a guider Archimede dans le labyrinthe
+vous aurez besoin de quelque commande a écrire dans le terminal (vous savez, cette horrible écran noir ou vous pouvez écrire)
 
 
+	howtoplay :
+	Apparement vous connaissez celle la puisque vous êtes entrain de lire ce message. Nous vous conseillons de lire le “howtoplay” a chaque niveau (vraiment..). Il se pourrait que des indices soit cacher dedans.
 
-Press Q to leave this page.
+	editcode :
+	Cette commande vous permet de modifier les instructions que vous donnez a Archimede.
+
+	playgame :
+	Je dirais que cette commande lance le jeu… Bien entendu ce serais judicieux de le lancer au moins une fois avant de modifier le code, histoire de savoir dans quel pétrin ce trouve Archimede..
+
+	nextlevel :		
+	Lorsque Archimede arrive a la fin du niveau vous pourrez utiliser cette commande afin de passer au niveau suivant.
 
 
+	Plutôt simple non? Bon assez de blabla, rentrons dans l’action. Vous pouvez quitter cette ‘page’ en appuyant sur la lettre ‘Q’ de votre clavier, ensuite essayer d’écrire “editcode” (sans les guillemets) et la magie devrait opéré.
 
+	Appuyez sur Q pour quitter.

@@ -1,19 +1,11 @@
-Well done, you got out of the first room !
-Hmmm... The next one should be easy then, right ?
+en jouer! Vous avez valider le premier niveau.
+Hmmm… le prochain niveau devrait être facile non?
 
-Just in case, here's the walk function's prototype again :
+Au cas ou, un petit rappel sur la fonction walk
 
-	walk (direction)
+	walk(direction)
+	direction = UP, DOWN, LEFT ou RIGHT.
 
-... with direction = UP, DOWN, LEFT or RIGHT.
+Ah et n’oubliez pas : pour écrire dans VIM vous devez d’abord activer le mode INSERT en appuyant sur la touche i de votre clavier. Pour sauvegarder les instruction vous devez quitter le mode insertion (esc sur le clavier) et écrire :wq (vous pouvez voir les actions en bas a gauche de vim lorsque vous n’êtes pas en mode INSERT)
 
-Oh and don't forget : to write in VIM editor, you have to turn it into
-INSERT mode (press I on the keyboard). To save the file and leave the
-editor, you need to be out of the edit mode (press ESC on your keyboard),
-and you have to type :wq on your keyboard.
-
-
-
-
-
-Press Q to quit.
+	Appuyez sur Q pour quitter.

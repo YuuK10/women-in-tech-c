@@ -1,22 +1,24 @@
 
-			|================================|
-			|   Authorized line count : 10   |
-			|================================|
+			|====================================|
+			|   Nombre de ligne autoriser : 10   |
+			|====================================|
 
-You should be comfortable with the walk(direction) function know.
-So let's add some challenge and new knowledge.
+Vous devriez etre a l'aise avec la fonction walk(direction) maintenant.
+Ajoutons un peu de challenge et de nouvelles connaissance.
 
-As you know there is two mode in vim -- INSERT -- and
-the mode you use to save and quit (:wq).
+Comme vous le savez il y a deux mode dans vim. -- INSERT -- et le mode
+pour sauvegarder et quitter (:wq)
 
-When you are not in insert mode you can type several commande
-and make some usefull action on your text. For example you
-can delete one line by pressing two times 'd' ( dd ) and you can
-delete multiple line by type the number of line before pressing
-two times 'd' ( 10dd )
+Lorsque vous n'etes pas en mode -- INSERT -- vous pouvez taper des commandes
+pour manipuler le texte. Par exemple vous pouvez appuyez 2 fois sur la touche 'd'
+de votre clavier pour supprimer une ligne. Vous pouvez egalement ecrire un nombre
+de ligne suivis de 'dd'. Vous effacer alors le nombre de lignes ecrit.
 
-In this level you can't help archimede with useless word.. thanks
-to Rick Asley... so be smart and try to keep instruction as clean
-as possible.
+dd = supprimer 1 ligne
+10dd = supprimer 10 lignes
 
-Press Q to quit.
+Dans ce niveau les paroles de Rick Astley resonne toujours aux oreilles
+d'Archimede et vous ne pouvez pas lui donnez d'instruction superflue, elle
+pourrait ce perdre dans les paroles...
+
+Appuyer sur Q pour quitter.
