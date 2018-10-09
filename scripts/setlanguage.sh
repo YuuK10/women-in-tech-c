@@ -12,6 +12,14 @@ do
 	read language
 done
 
-mkdir data/config 2>&1 > /dev/null
+mkdir -p data/config 2>&1 > /dev/null
 touch data/config/language
 echo $language > data/config/language
+
+if [[ "$language" == "en" ]]
+then
+	echo "The language has been set to english"
+elif [[ "$language" == "fr" ]]
+then
+	echo "La langue est maintenant configurée en français"
+fi
