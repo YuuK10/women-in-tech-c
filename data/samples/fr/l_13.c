@@ -1,26 +1,26 @@
 #include "game_functions.h"
 
 /*
-**	The for loop does exactly the same thing than the while loop, but
-**	its syntax is slightly different. It allows you to declare your iterator
-**	write your condition and increment your iterator on the same line.
+**	La boucle for fait exactement la meme chose que la boucle while
+**	mais la syntaxe est legerement differente. Elle permet de declarer
+**	votre iterateur, ecrire votre condition et incrementer sur la meme ligne.
 **
-**	It is written like this :
+**	L'ecriture ressemble a :
 **	for (int iterator = 1 ; condition ; iterator++)
 **	{
-**		code to execute
+**		code a executer
 **	}
 **
-**	Note : iterator++ is a shorter way to write
+**	Note : iterator++ est une facon d'ecrire plus courte que 
 **		iterator = iterator + 1
-**	This is called and incrementation operator.
+**	Ceci est appeler un operateur d'incrementation.
 **/
 
 void player_function()
 {
 	for (int iterator = 0 ; iterator <= 20 ; iterator++)
 	{
-		//By using for loops, you can save 2 lines of code. Interresting, huh ?
-		//Maybe something is missing to complete the level...
+		//En utilisant la boucle for vous recuperer 2 lignes de code, interresant non?
+		//il manque sans doute quelque chose pour finir ce niveau.
 	}
 }

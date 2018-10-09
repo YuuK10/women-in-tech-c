@@ -1,43 +1,46 @@
 #include "game_functions.h"
 
-/*	Welcome in your first C code file !
+/*
+**	Bienvenue dans votre premier fichier C
 **
-**	What you see just right down there is called a function. A function 
-**	is basically a piece of code that will be executed by a program.
+**  Ce que vous voyez en dessous est appeller une fonction. Une fonction
+**  est un bout de code qui sera executer par le programme.
 **	
-**	You'll need to write the instructions for Archimede between those {
-**	and } brackets, and of course, you should not delete them, or the
-**	program wont even read your code, and will throw what we call a
-**	"compilation error".
+**  Vous devez ecrire les instructions pour archimede entre les { et }
+**	accolades, et bien entendu, vous ne devez pas les supprimer, ou le
+**	programme ne pourra meme pas lire votre code, et vous aurez ce
+**	ce que l'on appelle un erreur de compilation
 **
-**	As you can see, there is already an instruction written.
-**	The function walk(direction) is the first function you will have to
-**	use in this adventure, and will tell Archimede to walk one step in the
-**	direction you choose. You should write the direction between the ( and
-**	) brackets in uppercase (LEFT, RIGHT, UP, DOWN).
+**	Comme vous pouvez le voir, il y a deja une instruction ecrite.
+**	Cette fonctions walk(direction) est la premiere fonction que vous
+**  utiliserer dans cette aventure, et indiquera a Archimede d'avancer
+**	d'une case dans la direction donnee. Pour ce faire vous devez ecrire
+**	la direction entre ( et ) (parenthese) et en majuscule (LEFT, RIGHT, UP, DOWN).
 **
 **	-----------------------------------------------------------------------
-**	You are currently using the VIM text editor.
-**	In order to edit the file, you need to press I on your keyboard. You
-**	will then enter the "INSERT" mode (see on the bottom on the screen).
+**
+**	En ce moment vous utilisez l'editeur de texte VIM.
+**	Afin de modifier votre texte vous devez appuyer sur la touche i de votre clavier
+**	Vous entrerez alors en mode "INSERT" (vous pouvez le verifier en bas a gauche de l'ecran).
 **	
-**	To leave the "INSERT" mode, you need to press the ESC button.
+**	Pour quitter le mode "INSERT" il vous suffit d'appuyer sur la touche ESC du clavier.
 **	
-**	To save and quit this file, you have to leave the "INSERT" mode (see
-**	if "-- INSERT --" is written on the bottom of your screen or not), and 
-**	type ":wq" (without the double quotes, and yes, WITH the double dots)
-**	and press enter.
+**	Pour sauvegarder et quitter le fichier/VIM, vous devez quitter le mode "INSERT" (ESC)
+**	(en bas a gauche de l'ecran si il y a -- INSERT -- vous etes toujours en mode insertion
+**	une fois le mode insertion quitter vous pouvez ecrire ":wq: (sans les guillemets mais 
+**	avec les deux points) et appuyer sur enter.
+**
 **	-----------------------------------------------------------------------
 **
-**	One last thing : every C instruction must be followed by a semi-collon
-**	(;) in order to be valid.
+**	Une derniere chose : chacune des instructions ecrite en C DOIT etre suivie
+**	par un point virgule (;) pour etre valide.
 **
-**	Maybe you should leave this file and type "playgame" into the terminal,
-**	just to see what the first level looks like, and what this walk(RIGHT)
-**	function does. Then, come back to this file by typing "editcode", and
-**	add the instructions needed to finish the level.
+**	Nous vous conseillons de quitter ce fichier et d'ecrire "playgame" dans
+**	le terminal, afin de voir le premier niveau et voir ce que la 
+**	fonction walk(RIGHT) fait. ensuite revenez ici en ecrivant editcode
+**	afin d'ajouter les instructions necessaire a la completion du niveau.
 **
-**	Good luck !
+**	Bonne chance !
 **/
 
 void player_function()

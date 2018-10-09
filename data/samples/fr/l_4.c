@@ -1,21 +1,18 @@
 /* 
- * This is a commentary. Everything you write on this file will
- * be used against you but everything isn't usefull to help
- * Archimed getting out. As you'll progress through the game
- * you'll learn concept of -coding- here it's the commentary.
+ * Ceci est un commentaire. Tout ce que vous ecrivez dans ce
+ * fichier sera utiliser contre vous, mais tout n'est pas utile
+ * pour aider Archimede a sortir du labyrinthe. Tout au long
+ * de l'aventure vous apprendrez de nouveau concept de programmation,
+ * ici il s'agit du commentaire.
  *
- * You can write something for other people who works on the same
- * project. Helping them understand the codes you wrotes.
+ * Le commentaire est utiliser afin de donner des explications
+ * sur le code que vous ecrivez a d'autre developper, afin
+ * de les aider a comprendre votre code.
  *
- * you can put text between \/\* YOUR TEXTE HERE \*\/
- * (without \ this is used to "escape" charcter next to it and 
- * avoid having compilation trouble)
- *
- * You can delete multiple line at once in vim. To do that
- * you need to type the number of line and press "d" to times
- * (try "13dd" with the cursor on the first line)
- * 
- * pressing "d" two times without a number of line delete one line
+ * Vous pouvez supprimer plusieurs ligne a la fois dans vim.
+ * Pour ce faire il suffit d'ecrire le nombre de ligne suivit
+ * de 'dd' (n'oublier pas de quitter le mode --INSERT--)
+ * (par exemple : 18dd)
  *
  */
 

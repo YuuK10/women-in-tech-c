@@ -1,10 +1,11 @@
 #include "game_functions.h"
 
 /*
-**	A loop is a piece of code that will be repeated, until a
-**	condition becomes false.
+**	Une boucle est un bout de code qui repete une instruction
+**	ou des instruction tant que la condition est correcte ou
+**	que la condition deviennent fausse.
 **
-**	It is written like this :
+**	On ecrit une boucle de la maniere suivante :
 **	while (condition)
 **	{
 **		code to execute
