@@ -12,7 +12,7 @@ expr="s/.*__GAME_PATH__/game_path=\'${game_path_exp}\/\'/"
 sed -i "" ${expr} scripts/*
 
 echo "Creating saves directory..."
-mkdir data/saves 2>&1 > /dev/null
+mkdir -p data/saves 2>&1 > /dev/null
 
 echo "Creating alias"
 echo "alias playgame='$game_path/scripts/playgame.sh'" >> ~/.zshrc
