@@ -4,6 +4,7 @@ __GAME_PATH__
 cd $game_path
 
 lvl=$(cat data/current_level)
+lang=$(cat data/config/language)
 level_line=$(grep -m 1 $lvl data/data_level)
 level_status=$(echo $level_line | cut -f2)
 
@@ -14,17 +15,13 @@ then
 
 	if [[ "$next_level_name" = "$lvl" ]]
 	then
-		cat data/levels/docs/victory | less
+		cat data/levels/docs/$lang/victory | less
 	else
     	echo $next_level_name > data/current_level
     	echo "Next level : $next_level_name"
 
-    	src_path="src/"
-    	save_path="data/saves/"
-    	sample_path="data/samples/"
-
-    	mv src/player_function.c "${save_path}${lvl}.c"
-    	cp "${sample_path}${next_level_name}.c" src/player_function.c
+    	mv src/player_function.c "data/saves/${lvl}.c"
+    	cp "data/samples/${lang}/${next_level_name}.c" src/player_function.c
 	fi
 else
     echo "You did not finish the current level yet."

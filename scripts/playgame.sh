@@ -7,9 +7,9 @@ errors=$(make 2>&1)
 
 if [ -z "$errors" ]
 then
-	> data/error
-	./game "${lvl}" 2>data/exec_error;
-	response=$(cat data/exec_error)
+	> data/config/exec_error
+	./game "${lvl}" 2>data/config/exec_error;
+	response=$(cat data/config/exec_error)
 	if [ -n "$response" ]
 	then
 		echo "\033[0;35mWell well... You program times out. If you have a loop inside,"

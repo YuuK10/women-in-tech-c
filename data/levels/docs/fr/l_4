@@ -1,0 +1,22 @@
+
+			|================================|
+			|   Authorized line count : 10   |
+			|================================|
+
+You should be comfortable with the walk(direction) function know.
+So let's add some challenge and new knowledge.
+
+As you know there is two mode in vim -- INSERT -- and
+the mode you use to save and quit (:wq).
+
+When you are not in insert mode you can type several commande
+and make some usefull action on your text. For example you
+can delete one line by pressing two times 'd' ( dd ) and you can
+delete multiple line by type the number of line before pressing
+two times 'd' ( 10dd )
+
+In this level you can't help archimede with useless word.. thanks
+to Rick Asley... so be smart and try to keep instruction as clean
+as possible.
+
+Press Q to quit.

@@ -21,7 +21,7 @@ mkdir data/saves 2>&1 > /dev/null
 echo "Initializing game..."
 rm src/player_function.c 2>&1 > /dev/null
 lvl=$(cat data/current_level)
-cp data/samples/$lvl.c src/player_function.c
+cp data/samples/$language/$lvl.c src/player_function.c 2>&1 > /dev/null
 
 echo "Creating alias"
 echo "alias playgame='$game_path/scripts/playgame.sh'" >> ~/.zshrc
@@ -30,6 +30,9 @@ echo "alias howtoplay='$game_path/scripts/howtoplay.sh'" >> ~/.zshrc
 echo "alias nextlevel='$game_path/scripts/nextlevel.sh'" >> ~/.zshrc
 echo "alias resetlevel='$game_path/scripts/resetlevel.sh'" >> ~/.zshrc
 echo "alias resetgame='$game_path/scripts/resetgame.sh'" >> ~/.zshrc
+echo "alias setlanguage='$game_path/scripts/setlanguage.sh'" >> ~/.zshrc
+
+./scripts/setlanguage.sh
 
 echo "\n\n\033[0;32mInstallation complete. Please restart the terminal to play.\n"
 echo "\033[0;33mNote : to activate the developper mode, you can turn the DEVELOPPER_MODE"

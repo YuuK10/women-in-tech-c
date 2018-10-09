@@ -1,0 +1,23 @@
+Well, well, well...
+This next level should remind you something. It's a good opportunity to
+learn something new !
+
+In C language, they're are may tools you can use to simplify your coder life.
+This includes what we call LOOPS.
+
+A loop is a piece of code that will be executed as long as a condition verified.
+A condition can be, for instance :
+
+	variable == 1	-> Is the variable equal to 1 ?
+	variable > 19	-> Is the variable greater than 19 ?
+	variable < 42	-> Is the variable smaller than 42 ?
+	variable >= 101	-> Is the variable greater than or equal to 101 ?
+	variable <= 0	-> Is the variable smaller than or equal to 0 ?
+
+Of course, this variable can be modified during the loop. And it actually will
+often be the case, with INCREMENTED VARIABLES. You will have a proper example
+in the code.
+
+
+
+Press Q to quit.
