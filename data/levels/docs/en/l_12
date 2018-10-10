@@ -1,4 +1,14 @@
 
 			|================================|
-			|   Authorized line count : 35   | 
+			|   Authorized line count : 35   |
 			|================================|
+
+Hm, this one may be a bit more tricky. You have only 35 lines to achieve the
+goal, so you better use loops, loops everywhere !
+
+Also, you can loops inside other loops. But then, you have to use different
+incremented variables for the conditions (obviously). Maybe you could follow
+the code that is already written could help you understand it a bit...
+
+
+Press Q to quit.
