@@ -2,3 +2,21 @@
 			|================================|
 			|   Authorized line count : 16   | 
 			|================================|
+
+Comment atteindre la fin de ce niveau avec seulement 16 lignes de code ?
+Vous devriez, avec certitude, reduire le nombre de lignes au maximum.
+
+|====================================================================|
+|																	 |
+|	Rappel : Boucle "for".											 |
+|																	 |
+|		for (int variable ; condition ; variable++)					 |
+|		{															 |
+|			action a repeter tant que la condition est vrai			 |
+|		}															 |
+|																	 |
+|====================================================================|
+
+
+
+Appuyer sur Q pour quitter.

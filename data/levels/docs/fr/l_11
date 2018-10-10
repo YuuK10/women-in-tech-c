@@ -2,3 +2,32 @@
 			|================================|
 			|   Authorized line count : 16   | 
 			|================================|
+
+Archimedes a l'impression de faire tout le temps les meme choses... Peut etre
+que vous pouvez lui dire une fois de repeter son action.
+
+	|====================================================================|
+	|																	 |
+	|	Rappel : boucles   											     |
+	|																	 |
+	|		while (condition)											 |
+	|		{															 |
+	|			action a repeter tant que la condition est vrai			 |
+	|		}															 |
+	|																	 |
+	|====================================================================|
+
+	|====================================================================|
+	|																	 |
+	|	Rappel 2 : 	 L'incrementation est une condition simple pour la	 |
+	|				 pour les boucles									 |
+	|																	 |
+	|		int variable;												 |
+	|		variable = variable + 1;									 |
+	|																	 |
+	|====================================================================|
+
+
+
+
+Appuyer sur Q pour quitter.

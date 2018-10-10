@@ -2,3 +2,18 @@
 			|================================|
 			|   Authorized line count : 13   | 
 			|================================|
+
+Archimedes a perdu la notion du temps dans ce labyrinth. Elle ne sait plus
+depuis combien de temps elle marche. On dirait un couloir sans fin..
+Mais au moment de tourner, elle decouvre... une porte ?
+
+Revenir en arriere? hors de question.. et impossible de prendre une
+autre route. Elle doit l'ouvrir!
+
+Voici la fonction a utiliser lorsque vous vous retrouvez devant une porte :
+
+	oepn_door (direction);
+
+Bonne chance !
+
+Appuyer sur Q pour quitter.
