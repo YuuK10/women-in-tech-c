@@ -87,7 +87,7 @@ void player_function()
 
 
 	walk(UP);
-	//you can add it somewhere
+	//you can add it where you want
 	walk(UP);
 
 	walk(UP);

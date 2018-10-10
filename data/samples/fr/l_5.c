@@ -82,12 +82,12 @@ void player_function()
 {
 	walk(UP);
 	walk(UP);
-	//this is a single line commentary
+	//Ceci est un commentaire sur une seul ligne
 
 
 
 	walk(UP);
-	//you can add it somewhere
+	//Vous pouvez l'ecrire n'importe ou
 	walk(UP);
 
 	walk(UP);
