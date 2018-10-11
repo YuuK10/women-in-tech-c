@@ -26,7 +26,7 @@ u			This is the UNDO command. Very useful •ᴗ•
 
 This level is the first one in which the amount of line in the file is limited.
 For each level, you can know if it is limited on the top of the howtoplay. For
-this one, you are limited to 10. If you have to many lines, the game won't even
+this one, you are limited to 10. If you have too many lines, the game won't even
 launch. In this case, you should then look your code, just to see if there
 aren't any useless lines ¯\_(ツ)_/¯
 
