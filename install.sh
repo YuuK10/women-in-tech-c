@@ -22,6 +22,7 @@ echo "alias nextlevel='$game_path/scripts/nextlevel.sh'" >> ~/.zshrc
 echo "alias resetlevel='$game_path/scripts/resetlevel.sh'" >> ~/.zshrc
 echo "alias resetgame='$game_path/scripts/resetgame.sh'" >> ~/.zshrc
 echo "alias setlanguage='$game_path/scripts/setlanguage.sh'" >> ~/.zshrc
+echo "alias help='$game_path/scripts/help.sh'" >> ~/.zshrc
 
 ./scripts/setlanguage.sh
 
