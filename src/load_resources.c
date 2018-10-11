@@ -2,7 +2,7 @@
 
 void				init_colors(t_game_element **elements)
 {
-	int current_color = 8;
+	int current_color = 150;
 	int i = 0;
 
 	while (elements[i])

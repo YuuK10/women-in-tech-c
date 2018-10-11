@@ -13,7 +13,7 @@ then
 	if [ -n "$response" ]
 	then
 		echo "\033[0;35mWell well... You program times out. If you have a loop inside,"
-		echo "you definitely should check its condition :D"
+		echo "you definitely should check its condition, or your incremented variable :D"
 	fi
 else
 	echo "\033[0;35mOh, it looks like you have errors in your code. You should recheck it :)"
