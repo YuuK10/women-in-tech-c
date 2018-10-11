@@ -1,0 +1,61 @@
+TERMINAL COMMANDS
+=================
+
+
+help			Shows this screen.
+
+howtoplay		Shows the help screen for the current level.
+
+editcode		Opens the file where to write your instructions.
+
+playgame		Launches the game.
+
+nextlevel		Validates the current level and goes to the next one.
+
+resetlevel		Resets the level.
+
+resetgame		Resets the game. (WARNING)
+
+
+INSTRUCTION FUNCTIONS
+=====================
+
+
+walk (direction)        Makes Archimede walk one step into the choosen direction.
+
+open_door (direction)   Makes Archimede open the door in the choosen direction.
+
+
+INSTRUCTION PARAMETERS
+======================
+
+direction               UP | DOWN | LEFT | RIGHT
+
+
+C LANGUAGE SYNTAX
+=================
+
+COMMENTS
+
+  /* MULTILINE/BLOCK comment */
+  // SINGLE LINE comment
+
+VARIABLES
+
+  int variable_name;
+  variable_name = 19;
+
+
+WHILE LOOPS
+
+  while (condition)
+  {
+    code to execute
+  }
+
+FOR LOOPS
+
+  for (int i = 1 ; condition ; i++)
+  {
+    code to execute
+  }
