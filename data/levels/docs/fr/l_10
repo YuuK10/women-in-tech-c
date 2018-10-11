@@ -21,7 +21,7 @@ longtemps qu'une condition est vérifiée.
 		variable <= 0	-> Est-ce que variable est inférieure ou égale à 0 ?
 
 Bien entendu, les variables peuvent être modifiées pendant les boucles. Et,
-en réalitée, ça arrivera même plutôt souvent, avec les VARIABLES INCRÉMENTÉES.
+en réalité, ça arrivera même plutôt souvent, avec les VARIABLES INCRÉMENTÉES.
 Vous en aurez un exemple concret dans le code.
 
 
