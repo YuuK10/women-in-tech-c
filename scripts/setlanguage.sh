@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-game_path='/Users/lsiquet/Documents/women-in-tech-c/'
+__GAME_PATH__
 cd $game_path
 
 echo -n "What language should be installed ? (en/fr) : "
