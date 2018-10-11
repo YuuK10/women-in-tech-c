@@ -18,11 +18,11 @@ très certainement tes besoins pour cette aventure :
 
 dd		Celle-ci te permettra d'effacer la ligne sur laquelle se trouve le curseur.
 
-10dd	Celle-ci supprimera 10 lignes à partir de la ligne sur laquelle se trouve
+10dd		Celle-ci supprimera 10 lignes à partir de la ligne sur laquelle se trouve
 		le curseur. Naturellement, tu peux changer le "10" en le nombre de lignes
 		que tu veux supprimer.
 
-u			Cette commande annule ce que tu viens de faire. Très pratique •ᴗ•
+u		Cette commande annule ce que tu viens de faire. Très pratique •ᴗ•
 
 Ce niveau est le premier dans lequel le nombre de lignes dans le fichier est
 limité. Pour chaque niveau, tu peux connaître le nombre de lignes maximal
