@@ -1,12 +1,16 @@
 
-			|====================================|
-			|   Nombre de ligne autoriser : 10   |
-			|====================================|
+			|===================================|
+			|   Nombre de ligne autorisé : 10   |
+			|===================================|
 
-Et ben.. quelqu'un a tout mis sans dessus dessous dans ce code..
-Pouvez-vous arranger ca?
+WOW ! Ce code est un vrai foutoir. Archimede ne peut pas le lire. Tu pourrais
+le nettoyer ?
 
-N'oubliez pas vous pouvez supprimer plusieurs ligne en ecrivant
-le nombre de ligne suivis de 'dd' (10dd supprimera 10 lignes)
+Rappelle-toi, tu peux supprimer plusieurs lignes avec une seule commande.
+Par exemple :
 
-Appuyer sur Q pour quitter.
+	19dd (supprime 19 lignes)
+	5dd (supprime 5 lignes)
+	79dd (supprime 79 lignes...)
+
+Appuie sur Q pour quitter.

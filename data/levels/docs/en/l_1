@@ -29,6 +29,9 @@ help			This command will give you all the commands you need to play the game.
 			So, if there's any of the following command you forgot, juste type help
 			in the terminal.
 
+setlanguage	This one will change the language of the game into the language you
+			want.
+
 howtoplay		This command will show you specific instructions about the current
 			level. You should read the howtoplay for each one (like, really, no joke).
 			It may provide you some REALLY nice informations to complete it.
@@ -45,7 +48,7 @@ nextlevel		If Archimede got to the exit, you may type this command to go
 resetlevel		This command should be useful, in case you messed up something in
 			the code and that's not working anymore, or if you wanna retry the level.
 
-resetgame		Carefull with this one. This will erase all your progression, and
+resetgame		Careful with this one. This will erase all your progression, and
 			you will restart from the first level.
 
 

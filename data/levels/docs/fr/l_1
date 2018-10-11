@@ -1,34 +1,69 @@
-Oh mince ! Il semblerait qu’Archimedes la chouette soit bloquée dans un labyrinthe. Elle a besoin de votre aide pour s’en sortir ! Pouvez-vous lui dire ce qu’elle doit faire ? C’est plutôt simple, il suffit de lui écrire des indications simple qu’elle pourra suivre étape par étape.
+	Oh mince ! Il semblerait qu'Archimede la chouette est coincée dans un
+labyrinthe. Elle a vraiment besoin de ton aide pour en sortir. Tu pourrais
+l'aider ? C'est assez facile, il suffit de lui écrire des instructions simple
+qu'elle pourra suivre une par une.
 
-Par contre elle ne comprend que le langage C. Vous ne le connaissez pas? Et bien… j’espère que vous apprenez vite…
+	Au fait, elle ne comprend que le langage C. Tu ne le connais pas ? Et bien,
+j'espère que tu apprends vite...
 
-Pour chaque niveau de ce jeu, vous devrez suivre quelque étape :
+
+
+
+			INSTRUCTIONS DE JEU
+			-------------------
+
+Pour chaque niveau de ce jeu, vous devrez suivre quelques étapes :
 
 	- Regarder la carte de chaque niveau
-	- Ecrire le code
+	- Écrire les instructions dans le fichier d'instructions
 	- Le tester
-	- Ecrire le code encore (ce serait bien si ca fonctionnait du premier coup, non?)
+	- Réécrire les instructions (ça serait pas drôle si ça fonctionnait du premier
+	  coup, pas vrai ?)
 	- Retester le code
-	- …
-	- Archimede a atteint la fin du niveau ? Bien, go au niveau suivant.
+	- ...
+	- Archimede a atteint la fin du niveau ? Bien joué, passe au niveau suivant.
 
-	Pour arriver a guider Archimede dans le labyrinthe
-vous aurez besoin de quelque commande a écrire dans le terminal (vous savez, cette horrible écran noir ou vous pouvez écrire)
-
-
-	howtoplay :
-	Apparement vous connaissez celle la puisque vous êtes entrain de lire ce message. Nous vous conseillons de lire le “howtoplay” a chaque niveau (vraiment..). Il se pourrait que des indices soit cacher dedans.
-
-	editcode :
-	Cette commande vous permet de modifier les instructions que vous donnez a Archimede.
-
-	playgame :
-	Je dirais que cette commande lance le jeu… Bien entendu ce serais judicieux de le lancer au moins une fois avant de modifier le code, histoire de savoir dans quel pétrin ce trouve Archimede..
-
-	nextlevel :		
-	Lorsque Archimede arrive a la fin du niveau vous pourrez utiliser cette commande afin de passer au niveau suivant.
+Pour ce faire, tu auras besoin de quelques commandes à écrire dans le terminal
+(tu sais, cette boite noire sur laquelle tu lis ce texte)
 
 
-	Plutôt simple non? Bon assez de blabla, rentrons dans l’action. Vous pouvez quitter cette ‘page’ en appuyant sur la lettre ‘Q’ de votre clavier, ensuite essayer d’écrire “editcode” (sans les guillemets) et la magie devrait opéré.
+help			Cette commande t'affichera toutes les commandes dont tu as besoin pour
+			progresser dans le jeu. Si tu as le moindre doute, tapes simplement help
+			dans le terminal.
 
-	Appuyez sur Q pour quitter.
+setlanguage	Celle-ci sert à changer la langue du jeu en la langue que tu désires.
+
+howtoplay		Cette commande t'affichera les instructions spécifiques au niveau
+			en cours. Tu devrais lire le howtoplay pour chacun d'entre eux (genre,
+			vraiment, sans blague). Ça t'apportera des informations VRAIMENT utiles
+			pour passer le niveau.
+
+editcode		Cette commande ouvrira le fichier dans lequel écrire les
+			instructions pour Archimede.
+
+playgame		Celle-là va... lancer le jeu. Surprenant, hein ? Bien sur, tu
+			devras peut-être le lancer parfois avant de modifier le code, histoire de
+			voir à quoi ressemble la carte du niveau.
+
+nextlevel		Si Archimede a atteint la sortie, tu devras taper cette commande
+			pour valider le niveau et passer au suivant.
+
+resetlevel		Cette commande devrait t'être utile, si jamais tu as bousillé
+			quelque chose dans le fichier d'instructions et que ça ne fonctionne plus.
+			Tu peux aussi l'utiliser pour recommencer le niveau.
+
+resetgame		Prudence avec celle-ci. Elle effacera toute ta progression, et tu
+			recommenceras au premier niveau.
+
+
+
+
+			Plutôt facile, non ?
+
+			Ok, fini de discuter, on passe à l'action. Quitte cette page en appuyant
+sur Q, puis tape "editcode" dans le terminal (sans les guillemets, évidemment),
+et sortons Archimede de là !
+
+
+
+Appuie sur Q pour quitter cette page.

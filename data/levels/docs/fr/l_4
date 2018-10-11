@@ -1,24 +1,34 @@
 
 			|====================================|
-			|   Nombre de ligne autoriser : 10   |
+			|   Nombre de lignes autorisé : 10   |
 			|====================================|
 
-Vous devriez etre a l'aise avec la fonction walk(direction) maintenant.
-Ajoutons un peu de challenge et de nouvelles connaissance.
+Tu devrais te sentir à l'aise avec la fonction walk (direction) maintenant,
+pas vrai ? Ok alors, ajoutons un brin de difficulté.
 
-Comme vous le savez il y a deux mode dans vim. -- INSERT -- et le mode
-pour sauvegarder et quitter (:wq)
+Comme tu le sais déjà, il y a deux modes dans VIM. Le mode "normal", où tu peux
+tapper des commandes pour interragir avec VIM, et le mode INSERT, dans lequel
+tu peux écrire du texte.
 
-Lorsque vous n'etes pas en mode -- INSERT -- vous pouvez taper des commandes
-pour manipuler le texte. Par exemple vous pouvez appuyez 2 fois sur la touche 'd'
-de votre clavier pour supprimer une ligne. Vous pouvez egalement ecrire un nombre
-de ligne suivis de 'dd'. Vous effacer alors le nombre de lignes ecrit.
+Quand tu es en mode normal, tu peux entrer de nombreuses commandes et effectuer
+des opérations fort utiles sur ton texte. En voici quelques unes qui satisferont
+très certainement tes besoin pour cette aventure :
 
-dd = supprimer 1 ligne
-10dd = supprimer 10 lignes
+:x		Tu la connais déjà. Elle sert à sauvegarder et quitter VIM.
 
-Dans ce niveau les paroles de Rick Astley resonne toujours aux oreilles
-d'Archimede et vous ne pouvez pas lui donnez d'instruction superflue, elle
-pourrait ce perdre dans les paroles...
+dd		Celle-ci te permettra d'effacer la ligne sur laquelle se trouve le curseur.
 
-Appuyer sur Q pour quitter.
+10dd	Celle-ci supprimera 10 lignes à partir de la ligne sur laquelle se trouve
+		le curseur. Naturellement, tu peux changer le "10" en le nombre de lignes
+		que tu veux supprimer.
+
+u			Cette commande annule ce que tu viens de faire. Très pratique •ᴗ•
+
+Ce niveau est le premier dans lequel le nombre de lignes dans le fichier est
+limité. Pour chaque niveau, tu peux connaître le nombre de lignes maximal
+autorisée en regardant dans le cadre au dessus du howtoplay. Pour celui-ci,
+tu es limité à 10 lignes. Dans le cas où tu dépasserais ce nombre, le jeu ne
+se lancera pas et tu verras un message d'erreur. Tu devrais alors vérifier
+ton code, juste au cas ou il n'y aurait pas des lignes inutiles ¯\_(ツ)_/¯
+
+Appuie sur Q pour quitter.

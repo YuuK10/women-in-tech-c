@@ -1,14 +1,16 @@
 
-			|================================|
-			|   Authorized line count : 16   | 
-			|================================|
+			|====================================|
+			|   Nombre de lignes autorisé : 16   |
+			|====================================|
 
-Archimedes arrive a une intersection. Elle se demande vraiment que chemin elle pourrait
-prendre. 
+Archimede arrive maintenant à une intersection. Elle se demande vraiment quel
+chemin elle devrait prendre. Tu auras vite compris que n'importe quel chemin
+fera l'affaire. Néanmoins, n'oubie pas que tu as un nombre de lignes limité
+pour le niveau...
 
-Vous pouvez devinez que n'importe quel chemin est bon, ais n'oubliez pas que
-dans ce niveau  vous etes limiter par le nombre d'instruction que vous pouvez lui donner.
-Trouverez vous le chemin?
+Pourras-tu trouver le chemin le plus court pour sortir ?
 
 
-Appuyer sur Q pour quitter.
+
+
+Appuie sur Q pour quitter.

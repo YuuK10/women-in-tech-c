@@ -1,19 +1,19 @@
 
-			|================================|
-			|   Authorized line count : 13   | 
-			|================================|
+			|====================================|
+			|   Nombre de lignes autorisé : 13   |
+			|====================================|
 
-Archimedes a perdu la notion du temps dans ce labyrinth. Elle ne sait plus
-depuis combien de temps elle marche. On dirait un couloir sans fin..
-Mais au moment de tourner, elle decouvre... une porte ?
+Archimede ne savait pas depuis combien de temps elle était en train de marcher.
+Le labyrinthe ressemblait à un long couloir sans fin. Mais alors qu'elle prenait
+le prochain tournant, elle se retrouva face à... une porte ? Impossible de
+faire demi tour, ni d'emprunter un autre chemin. Elle doit absolument l'ouvrir.
 
-Revenir en arriere? hors de question.. et impossible de prendre une
-autre route. Elle doit l'ouvrir!
+Voici la fonction à utiliser pour ouvrir une porte :
 
-Voici la fonction a utiliser lorsque vous vous retrouvez devant une porte :
-
-	oepn_door (direction);
+	open_door (direction);
 
 Bonne chance !
 
-Appuyer sur Q pour quitter.
+
+
+Appuie sur Q pour quitter.

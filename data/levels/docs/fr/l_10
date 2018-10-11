@@ -1,22 +1,18 @@
-Ce niveau devrait vous rappelez quelque chose. C'est une bonne opportunite
-pour apprendre quelque choses de nouveau.
 
-En langage C, ils y a plusieurs outils pour simplifier la vie du developper.
-Parlons ici des BOUCLES
+			|====================================|
+			|   Nombre de lignes autorisé : ∞    |
+			|====================================|
 
-Une boucle est un bout de code qui sera executer tant qu'une condition est
-verifiee.
 
-	variable == 1	-> Est-ce que le contenu de cette variable est egale a 1 ?
-	variable > 19	-> Est-ce que le contenu de cette variable est superieur a 19 ?
-	variable < 42	-> Est-ce que le contenu de cette variable est inferieur a 42 ?
-	variable >= 101	-> Est-ce que le contenu de cette variable est superier OU egale a  101 ?
-	variable <= 0	-> Est-ce que le contenu de cette variable est inferieur OU egale a 0 ?
+Voyons, voyons...
+Ce prochain niveau devrait te rappeler quelque chose. C'est une bonne opportunité
+pour apprendre de nouvelles choses.
 
-Bien entendu, cette variable peut etre modifier dans la boucles. Et c'est ce
-qui arrive la plus part du temps. on incremente la variable. Vous allez voir
-un exemple dans ce code.
+En langage C, il y a de nombreux outils que tu peux utiliser pour simplifier ta
+vie de programmeur. Cela inclu ce que l'on appelle les BOUCLES.
 
+Une boucle est un morceau de code qui sera exécuté plusieurs fois,
+aussi longtemps
 
 
 Appuyer sur  Q pour quitter.

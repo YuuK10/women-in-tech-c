@@ -1,11 +1,20 @@
-en jouer! Vous avez valider le premier niveau.
-Hmmm… le prochain niveau devrait être facile non?
+Bien joué, tu es sorti du premier niveau !
+Hmmm... Le prochain devrait être facile du coup, pas vrai ?
 
-Au cas ou, un petit rappel sur la fonction walk
+Juste au cas où, revoilà le protype de la fonction walk :
 
 	walk(direction)
-	direction = UP, DOWN, LEFT ou RIGHT.
 
-Ah et n’oubliez pas : pour écrire dans VIM vous devez d’abord activer le mode INSERT en appuyant sur la touche i de votre clavier. Pour sauvegarder les instruction vous devez quitter le mode insertion (esc sur le clavier) et écrire :wq (vous pouvez voir les actions en bas a gauche de vim lorsque vous n’êtes pas en mode INSERT)
+... avec direction = UP, DOWN, LEFT ou RIGHT. Tu peux taper "help" dans le
+terminal n'importe quand, si tu venais à l'oublier.
 
-	Appuyez sur Q pour quitter.
+Ah et n'oublie pas : pour écrire dans VIM, tu dois le faire passer en mode
+INSERT (appuye sur I). Pour sauvegarder le fichier et quitter VIM, tu dois
+être en dehors du mode INSERT (appuye sur ESC), et tu dois taper :x .
+
+
+
+
+
+
+Appuie sur Q pour quitter.
