@@ -3,10 +3,10 @@
 			|   Authorised line count : 40   |
 			|================================|
 
-Hm, this one may be a bit more tricky. You have only 35 lines to achieve the
+Hm, this one may be a bit more tricky. You have only 40 lines to achieve the
 goal, so you better use loops, loops everywhere !
 
-Also, you can loops inside other loops. But then, you have to use different
+Also, you can use loops inside other loops. But then, you have to use different
 incremented variables for the conditions (obviously). Maybe the code that is
 already written could help you understand it a bit more...
 
