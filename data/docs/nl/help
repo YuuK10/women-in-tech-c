@@ -1,0 +1,61 @@
+TERMINAL COMMANDOS
+==================
+
+
+help			Toont dit scherm.
+
+howtoplay		Toont de help scherm voor het huidige niveau.
+
+editcode		Opent het bestand om instructies te schrijven.
+
+playgame		Strat het spel.
+
+nextlevel		Brengt jouw naar het volgende niveau als de vorige klaar is.
+
+resetlevel		Resets het niveau.
+
+resetgame		Resets het spel. (OPPASSEN)
+
+
+INSTRUCTIE FUNCTIES
+===================
+
+
+walk (richting)        Archimede stapt 1 stap naar de gekozen richting.
+
+open_door (richting)   Archimede opent de deur in de gekozen richting.
+
+
+INSTRUCTIE PARAMETERS
+======================
+
+richting               UP | DOWN | LEFT | RIGHT
+
+
+C PROGRAMMEERTAAL ZINSBOUW
+==========================
+
+OPMERKINGEN
+
+  /* BLOCK opmerking */
+  // EENVOUDIGE LIJN opmerking
+
+VARIABELS
+
+  int variabel_naam;
+  variabel_naam = 19;
+
+
+WHILE LUSSEN
+
+  while (voorwaarde)
+  {
+    code uit te voeren
+  }
+
+FOR LUSSEN
+
+  for (int i = 1 ; voorwaarde ; i++)
+  {
+    code uit te voeren
+  }
