@@ -14,14 +14,14 @@
 
 void player_function()
 {
-	int iterator; //We declare a variable named iterator
+	int iterator; //On déclare une variable "iterator"
 
-	iterator = 1; //We set the value of 1 to iterator
-	while (iterator <= 20) //While iterator is < or = 20, do the following code
+	iterator = 1; //On assigne la valeur de 1 a iterator
+	while (iterator <= 20) //Tant que iterator <= 20, executer le code suivant...
 	{
-		//Maybe something is missing to complete the level...
-		//At each execution of the loop, the iterator will increment,
-		//until it reaches finally 20 and exit the loop
+		//Peut être que quelque chose manque ici...
+		//A la fin de chaque boucle, la variable iterator s'incremente
+		//jusqu'a ce qu'elle atteigne 21, et que la boucle s'arrete.
 		iterator = iterator + 1;
 	}
 }
