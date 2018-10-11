@@ -1,5 +1,12 @@
 #!/bin/zsh
 
+if [[ -z "$1" ]]
+then
+  language="en"
+else
+  language=$1
+fi
+
 echo "First compilation..."
 make all
 
@@ -24,9 +31,9 @@ echo "alias resetgame='$game_path/scripts/resetgame.sh'" >> ~/.zshrc
 echo "alias setlanguage='$game_path/scripts/setlanguage.sh'" >> ~/.zshrc
 echo "alias help='$game_path/scripts/help.sh'" >> ~/.zshrc
 
-./scripts/setlanguage.sh
+./scripts/setlanguage.sh $language
 
-language=$(cat data/config/language)
+
 
 echo "Initializing game..."
 rm -rf src/player_function.c 2>&1 > /dev/null

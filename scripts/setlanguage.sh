@@ -3,12 +3,17 @@
 __GAME_PATH__
 cd $game_path
 
-echo -n "What language should be installed ? (en/fr) : "
-read language
+if [[ -z "$1" ]]
+then
+	echo -n "What language should be installed ? (en/fr) : "
+	read language
+else
+	language=$1
+fi
 
 while [[ "$language" != "en" && "$language" != "fr" ]]
 do
-	echo -n "Please choose only between en (english) or fr (french) : "
+	echo -n "Please choose only between 'en' or 'fr' : "
 	read language
 done
 
