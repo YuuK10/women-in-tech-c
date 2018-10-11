@@ -1,14 +1,15 @@
 
-			|================================|
-			|   Authorized line count : 35   | 
-			|================================|
+									|====================================|
+									|   Nombre de lignes autorisé : 40   |
+									|====================================|
 
-Celui ci est un peu plus difficile. Vous avez droit a 35 lignes pour le reussir
-donc vous feriez mieux d'utiliser les boucles, boucles, boucles, boucles !
+Hm, celui-ci sera sûrement un peu plus compliqué. Tu as seulement 35 lignes de
+disponibles pour atteindre ton objectif, alors tu devras utiliser des boucles,
+des boucles partout !
 
-Vous pouvez faire des boucles dans des boucles, mais vous devrez utiliser
-une variable differentes pour les conditions. Vous pouvez suivre le code
-deja ecrit, cela devrait vous aider a comprendre un peu mieux.
+En plus, sache que tu peux créer des boucles DANS des boucles. Mais dans ce cas,
+tu devras créer plusieurs variables incrémentées différentes pour les conditions.
+Peut être que le code qui est déjà écrit t'éclairera un peu...
 
 
-Appuyer sur Q pour quitter.
+Appuie sur Q pour quitter.
