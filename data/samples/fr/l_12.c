@@ -5,16 +5,31 @@ void player_function()
 	int j;
 
 	i = 1;
-	while (i < 2)
+	while (i < 4)
 	{
+		j = 0;
+		while (j < 8)
+		{
+			walk(RIGHT);
+			j++;
+		}
+
+		j = 0;
+		while (j < 8)
+		{
+			walk(DOWN);
+			j++;
+		}
+
 		j = 0;
 		while (j < 8)
 		{
 			walk(UP);
 			j++;
 		}
-		j = 0;
-		//Completer le code d'ici...
+
+		//Essaie de compléter le niveau à partir d'ici...
+
 		i++;
 	}
 }
