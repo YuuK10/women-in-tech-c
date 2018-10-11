@@ -37,6 +37,7 @@ echo "Configuring language..."
 echo "Configuring VIM editor..."
 echo "set number" >> ~/.vimrc
 echo "syntax on" >> ~/.vimrc
+echo "set mouse=a" >> ~/.vimrc
 
 echo "Initializing game..."
 rm -rf src/player_function.c 2>&1 > /dev/null

@@ -25,7 +25,7 @@
 #define EXEC_DELAY					400
 #define TIMEOUT_PLAYER_FUNCTION		100 //in ms
 #define FAST_FORWARD_DELAY			100
-#define DEVELOPER_MODE				1
+#define DEVELOPER_MODE				0
 
 
 void 			show_instructions();
