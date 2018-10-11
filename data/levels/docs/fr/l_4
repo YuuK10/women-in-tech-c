@@ -12,7 +12,7 @@ tu peux écrire du texte.
 
 Quand tu es en mode normal, tu peux entrer de nombreuses commandes et effectuer
 des opérations fort utiles sur ton texte. En voici quelques unes qui satisferont
-très certainement tes besoin pour cette aventure :
+très certainement tes besoins pour cette aventure :
 
 :x		Tu la connais déjà. Elle sert à sauvegarder et quitter VIM.
 
@@ -26,7 +26,7 @@ u			Cette commande annule ce que tu viens de faire. Très pratique •ᴗ•
 
 Ce niveau est le premier dans lequel le nombre de lignes dans le fichier est
 limité. Pour chaque niveau, tu peux connaître le nombre de lignes maximal
-autorisée en regardant dans le cadre au dessus du howtoplay. Pour celui-ci,
+autorisées en regardant dans le cadre au dessus du howtoplay. Pour celui-ci,
 tu es limité à 10 lignes. Dans le cas où tu dépasserais ce nombre, le jeu ne
 se lancera pas et tu verras un message d'erreur. Tu devrais alors vérifier
 ton code, juste au cas ou il n'y aurait pas des lignes inutiles ¯\_(ツ)_/¯
