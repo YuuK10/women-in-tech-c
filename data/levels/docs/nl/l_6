@@ -1,0 +1,36 @@
+
+			|================================|
+			|   Maxium aantal lijnen : ∞    |
+			|================================|
+
+
+Heb je een goed geheugen ?
+Archimede heeft een perfect geheugen, ze vergeet niks.
+
+Je mag vragen om dingen te onthouden door het gebruiken van VARIABELS.
+Varaibles zijn een soort doos waar je informatie in kan plaatsen (een cijfer,
+een letter, binaire gegevens, ...).
+
+Om te beginnen moet je Archimede vertellen wat de naam is van je variabele. Dit
+procedure wordt de VARIABEL DECLARATIE genoemd. Dit doe je zo:
+
+	int	mijn_fantastiche_variabele;
+
+De naam van een variabele mag alleen maar letter, cijfers en underscores (_)
+bevatten. De letters mogen in hoofdletters of kleine letters.
+
+Nu moet je je variabele een waarde geven. Dit is het beste deel:
+
+	mijn_fantastische_variabele = 19;
+
+En voila, mijn_fantastische_variabele bevat nu het beste cijfer van de wereld !
+Je kan de vrariabels ook gebruiken in functies:
+
+	nuttige_functie(mijn_fantastische_variabele);
+
+Je krijgt een goed voorbeeld in de code van dit niveau !
+
+
+
+
+Druk Q om deze pagina te verlaten.

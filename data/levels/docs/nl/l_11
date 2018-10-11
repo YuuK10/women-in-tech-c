@@ -1,0 +1,32 @@
+
+					|================================|
+					|   Maximum aantal lijnen : 16   |
+					|================================|
+
+
+Archimede voelt dat ze telkens dezelfde actie aan het uitvoeren is. Misschien
+kan je haar maar 1 keer vertellen ?
+
+	|======================================================================|
+	|                                                                      |
+	| Herinnering : Lussen.                                                |
+	|                                                                      |
+	|   while (voorwaarde)                                                 |
+	|   {                                                                  |
+	|     code om te herhalen telkens voorwaarde gelijk is aan True.       |
+	|   }                                                                  |
+	|                                                                      |
+	|======================================================================|
+
+	|======================================================================|
+	|                                                                      |
+	| Herinnering 2 : incrementatie is een makkelijke conditie voor lussen |
+	|                                                                      |
+	|   int variabele;                                                     |
+	|   variabele = variabele + 1;                                         |
+	|                                                                      |
+	|======================================================================|
+
+
+
+Press Q to quit.

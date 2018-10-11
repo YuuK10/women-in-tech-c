@@ -1,0 +1,19 @@
+
+			|================================|
+			|   Maximum aantal lijnen : 13   |
+			|================================|
+
+Archimede wist niet voor hoeveel tijd ze aan het stappen was. Het doolhof leek
+op een doodlopende gang. Ophet moment dat ze de volgende afslag nam, was ze
+plotseling geblokkeerd door een ...deur ?? Onmogelijk om terug te gaan, ze moet
+de deur openen.
+
+Hier is de functie die je moet gebruiken als je een deur tegekomt :
+
+	open_door (richting);
+
+Veel succes !
+
+
+
+Druk Q om deze pagina te verlaten.

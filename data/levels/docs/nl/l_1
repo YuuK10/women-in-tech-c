@@ -1,0 +1,66 @@
+	Oh nee ! Het blijkt dat Archimede de uil vast zit in een doolhof.
+Ze heeft jouw hulp nodig om er veilig uit te raken ! Zou jij haar
+kunnen vertellen wat ze moet doen ? Het is niet zo moeilijk, schrijf
+simpele instructies dat ze stap voor stap kan volgen.
+
+	Ter informatie, ze verstaat alleen C programmeer taal. Oei, je kent
+er niks van ? Dan hoop ik dat je maar snel leer !
+
+
+
+
+			 SPELINSTRCUTIES
+			-----------------
+
+Voor elk niveau van dit spel ga je een aantal stappen moeten volgen :
+
+	- Kijken naar de het niveau
+	- De instructies schrijven in de 'editcode' bestand
+	- Proberen en testen
+	- Instructies opnieuw schrijven of verbeteren (Zou wat saai zijn als het de
+		eerste keer lukt, nee ?)
+	- Opnieuw proberen
+	- ...
+	- Heeft archimede een weg naar de uitgang gevonden ? Fantastisch, dan mag je
+		naar het volgende niveau.
+
+Om dit te kunnen done ga je een aantal commandos in de terminal moeten schrijven
+(Je weet wel, dat leelijk zart venster waar je enkel in het wit kan schrijven) :
+
+help			Deze commando geeft je alle commandos nodig om de spel te kunnen
+			spelen. Als je op een bepaald moment één van de commados vergeten ben,
+			typ dan zeker dit commando.
+
+howtoplay		Deze commando geeft je belangrijke informatie en instructies over
+			het huidige niveau. Je zou de howtoplay voor elk niveau MOETEN lezen. Het
+			zou je tips kunnen geven om het niveau te beeindigen.
+
+editcode		Deze commando opent de instructies bestand waar je je instructies
+			schrijf.
+
+playgame		Deze commando start het spel. Verrassend, he ? Typ zeker dit
+			commando 1 keer voor dat je je code schrijft om te zien hoe het niveau
+			eruit ziet.
+
+nextlevel		Als Archimede de uitgang heeft bereikt dan mage je zeker dit
+			commando typen om naar het volgende niveau te gaan.
+
+resetlevel		Deze commando zou nuttig kunnen zijn, als je iets fout heb gedaan
+			in je code of als je gewoon het niveau opnieuw wil proberen.
+
+resetgame		Wees voorzichtig met deze. Deze commando zal heel je progressie
+			verwijderen en je gaat alles opnieuw moeten doen. (Niet de bedoeling,
+			denk ik toch ...?)
+
+
+
+
+	Vrij eenvoudig, is het niet ?
+
+	Ok, genoeg gezegd, tijd om te beginnen. Verlaat deze pagina door op de Q knop
+te drukken op je toetsenbord en typ de commando "editcode" (zonder de quotes
+-> "")
+
+
+
+Druk Q om dit pagina te verlaten.

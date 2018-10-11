@@ -1,0 +1,22 @@
+
+		     	|================================|
+		     	|   Maximum aantal lijnen : 16   |
+		     	|================================|
+
+     Hoe is het mogelijk om het einde te bereiken in 16 lijnen ?
+     Ik zou goed opletten welke lijnen je echt nodig heb...
+
+     |====================================================================|
+     |                                                                    |
+     | Herinnering : "for" lussen.                                        |
+     |                                                                    |
+     |   for (int variablee ; voorwaarde ; variabele++)                   |
+     |   {                                                                |
+     |     code om te herhalen telkens voorwaarde gelijk is aan True.     |
+     |   }                                                                |
+     |                                                                    |
+     |====================================================================|
+
+
+
+Druk Q om deze pagina te verlaten.

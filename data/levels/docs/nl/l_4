@@ -1,0 +1,35 @@
+
+			|================================|
+			|   Maximum aantal lijnen : 10   |
+			|================================|
+
+Dankzij al deze oefeningen ken je nu de walk functie beter dan de maker van dit
+fantastisch spel. Het is nu het perfecte moment voor een nieuwe uitdaging !
+
+Zoels je al weet zijn er 2 verschillende mode's in VIM. De "normal mode",
+waarmee je commandos kan schrijven die VIM beïnvloeden, en de INSERT mode,
+waarmee je tekst kan schrijven in VIM.
+
+Als je je in "normal mode" bevindt, kan je een aantal nuttige commandos typen
+maar ook een aantal bruibare acties op je tekst. Voor jouw heb ik een kleine
+lijst geschreven van acties en commandos die heel wat tijd kunnen sparen
+gedurende de rest van het spel:
+
+:x		Heb je al gebruikt, dient om je code op te slaan en je bestand te verlaten.
+
+dd		Deze commando verwijdert de lijn waar je je bevindt.
+
+10dd	Deze commando doet zoals dd maart verwijdert niet 1 maar 10 lijnen
+		beginnend van de lijn waar je je bevind. Je mag zeker de 10 veranderen door
+		het getal van je keus.
+
+u			Deze is zoals de ctrl+z in word. Zeer zeer nuttig •ᴗ•
+
+
+Dit niveau is het eerste niveau met een maximun aantal lijnen in het bestand.
+Voor elk niveau kan je weten hoeveel lijnen je maximum mag hebben door de
+howtoplay te raadplegen. Voor deze ben je gelimiteerd tot 10 lijnen. Als je te
+veel lijnen heb dan zal het spel niet starten. In dit geval moet je terug naar
+de code om te kijken waar je te veel of onnodige lijnen hebt.
+
+Druk Q om deze pagina te verlaten.

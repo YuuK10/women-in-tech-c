@@ -1,0 +1,30 @@
+
+			|================================|
+			|   Maximum aantal lijnen : ∞    |
+			|================================|
+
+
+Amaai, amaai, amaai,...
+Het volgende niveau moet je iets laten herineren. Het is het goede moment om
+iets bij te leren !
+
+In C programmeertaal zijn er veel dingen die je code makkelijker kunnen maken.
+LUSSEN zijn een van deze dingen.
+
+Een lus is een stukje code dat wordt uitgevoerd zolang een voorwaarde is
+geverifieerd.
+Een voorwaarde zou kunnen zijn :
+
+	variabele == 1	-> Is de variabele gelijk aan 1 ?
+	variable > 19	-> Is de variabele groter dan 19 ?
+	variable < 42	-> Is de variabele kleiner dan 42 ?
+	variable >= 101	-> Is de variabele groter of gelijk aan 101 ?
+	variable <= 0	-> Is de variabele kleiner of gelijk aan 0 ?
+
+Natuurlijk kan deze variabele verandert worden gedurende de lus. Meestal is het
+ook het geval met verhoogde variabels. Je krijgt een duidelijk voorbeeld in de
+volgende oefening.
+
+
+
+Press Q to quit.

@@ -1,0 +1,22 @@
+Bravo, je hebt het twwede niveau gehaald !
+Hmmm... De volgende zou makkelijk moeten zijn, nee ?
+
+In geval dat je de walk functie vergeten zou zijn, hier is hoe je ze moet
+schrijven :
+
+	walk (richting)
+
+... met richting = UP, DOWN, LEFT of RIGHT. Typ "help" in de terminal wanneer
+je wil als je het opnieuw zou vergeten in de toekomst ;)
+
+Vergeet zeker niet : om in de VIM editor te schrijven moet je in INSERT mode
+zijn (druk I op je toetsenbord). Om het bestand op te slaan en te verlaten moet
+je eerst het INSERT mode verlaten. (druk ESC op je toetsenbord) Schrijf nu :x
+en dan ENTER. Als je terug in de terminal ben dan heb je je bestand verlaten,
+gefeliciteerd !
+
+
+
+
+
+Druk Q om deze pagina te verlaten.
