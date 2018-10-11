@@ -1,22 +1,33 @@
 
 			|================================|
-			|   Authorized line count : 10   |
+			|   Authorised line count : 10   |
 			|================================|
 
-You should be comfortable with the walk(direction) function know.
-So let's add some challenge and new knowledge.
+You should be comfortable with the walk (direction) function now, right ?
+Ok so, let's add some more challenge.
 
-As you know there is two mode in vim -- INSERT -- and
-the mode you use to save and quit (:wq).
+As you know, there are two mode in VIM. The "normal mode", where you can type
+commands to interact with VIM, and the INSERT mode, where you can type text.
 
-When you are not in insert mode you can type several commande
-and make some usefull action on your text. For example you
-can delete one line by pressing two times 'd' ( dd ) and you can
-delete multiple line by type the number of line before pressing
-two times 'd' ( 10dd )
+When you are in the normal mode, you can type several commands
+and perform some useful actions on your text. Here are some that may
+particularly fit your needs for this adventure :
 
-In this level you can't help archimede with useless word.. thanks
-to Rick Asley... so be smart and try to keep instruction as clean
-as possible.
+:x		You already used it. You can use it to save and quit VIM.
+
+dd		This command will delete the line you cursor is on.
+
+10dd	This one will delete the 10 first line, starting for the line the cursor
+		is on. Obviously, you can turn the "10" in any number you want, according
+		to the amount of lines you wanna delete.
+
+u			This is the UNDO command. Very useful •ᴗ•
+
+
+This level is the first one in which the amount of line in the file is limited.
+For each level, you can know if it is limited on the top of the howtoplay. For
+this one, you are limited to 10. If you have to many lines, the game won't even
+launch. In this case, you should then look your code, just to see if there
+aren't any useless lines ¯\_(ツ)_/¯
 
 Press Q to quit.

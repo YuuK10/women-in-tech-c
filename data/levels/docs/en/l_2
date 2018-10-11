@@ -5,12 +5,13 @@ Just in case, here's the walk function's prototype again :
 
 	walk (direction)
 
-... with direction = UP, DOWN, LEFT or RIGHT.
+... with direction = UP, DOWN, LEFT or RIGHT. You can type "help" in the
+terminal whenever you want in the future if you forgot it.
 
 Oh and don't forget : to write in VIM editor, you have to turn it into
 INSERT mode (press I on the keyboard). To save the file and leave the
 editor, you need to be out of the edit mode (press ESC on your keyboard),
-and you have to type :wq on your keyboard.
+and you have to type :x on your keyboard.
 
 
 

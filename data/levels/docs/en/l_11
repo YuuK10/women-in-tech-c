@@ -1,6 +1,6 @@
 
 					|================================|
-					|   Authorized line count : 16   |
+					|   Authorised line count : 16   |
 					|================================|
 
 
@@ -8,23 +8,23 @@ Archimede feels she's always doing the same actions... Maybe you can tell her
 only once to do it several times ?
 
 	|====================================================================|
-	|																	 |
-	|	Reminder : Loops.												 |
-	|																	 |
-	|		while (condition)											 |
-	|		{															 |
-	|			code to repeat as long as the condition is true			 |
-	|		}															 |
-	|																	 |
+	|                                                                    |
+	| Reminder : Loops.                                                  |
+	|                                                                    |
+	|   while (condition)                                                |
+	|   {                                                                |
+	|     code to repeat as long as the condition is true                |
+	|   }                                                                |
+	|                                                                    |
 	|====================================================================|
 
 	|====================================================================|
-	|																	 |
-	|	Reminder 2 : Incrementation is an easy condition for a loop.	 |
-	|																	 |
-	|		int variable;												 |
-	|		variable = variable + 1;									 |
-	|																	 |
+	|                                                                    |
+	| Reminder 2 : Incrementation is an easy condition for a loop.       |
+	|                                                                    |
+	|   int variable;                                                    |
+	|   variable = variable + 1;                                         |
+	|                                                                    |
 	|====================================================================|
 
 

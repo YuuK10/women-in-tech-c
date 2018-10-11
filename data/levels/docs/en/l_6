@@ -1,3 +1,9 @@
+
+			|================================|
+			|   Authorised line count : ∞    |
+			|================================|
+
+
 Do you have a good memory ?
 Archimede does. (Of course, it is Archimede.)
 
@@ -8,16 +14,20 @@ a character, binary data, and so on...).
 First, you need to tell her the name of your variable. This is called
 VARIABLE DECLARATION, and you can to it this way :
 
-	int name_of_my_variable;
+	int my_awesome_var;
 
 A variable name should always start with a letter, and should only contain
 lowercase or uppercase letters, numbers, and underscores (_).
 
 You have then to give it a value. This is the funniest part.
 
-	name_of_my_variable = 19
+	my_awesome_var = 19;
 
 And BIM, name_of_my_variable now contains the best number of the world !
+You can also use variables into functions, just like this :
+
+	cool_function (my_awesome_var);
+
 You will see a very practical example in the code of this level.
 
 

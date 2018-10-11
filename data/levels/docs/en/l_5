@@ -1,14 +1,15 @@
 
 			|================================|
-			|   Authorized line count : 10   | 
+			|   Authorised line count : 10   |
 			|================================|
 
-Damn someone made a mess in this code... could you clean it?
-Remember you can delete multiple line in a single command
-by writing the number of line you want to delete and 'dd'
+DAMN ! This code is a huge mess ! Archimede can't read it. Could you clean it?
 
-By the way we find a paper with "room 5 - 10" written on it, i don't
-know what it mean but it seems important..
+Remember, you can delete multiple lines with a single command.
+For example:
 
+	19dd (to delete 19 lines)
+	5dd (to delete 5 lines)
+	79dd (to delete 79 lines...)
 
 Press Q to quit.

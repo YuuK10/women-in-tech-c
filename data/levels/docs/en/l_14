@@ -1,21 +1,21 @@
 
-			|================================|
-			|   Authorized line count : 16   |
-			|================================|
+		     	|================================|
+		     	|   Authorised line count : 16   |
+		     	|================================|
 
-How can you reach the end of this level in only 16 lines of code ?
-You should definitely save all the lines you can...
+     How can you reach the end of this level in only 16 lines of code ?
+     You should definitely save all the lines you can...
 
-|====================================================================|
-|																	 |
-|	Reminder : "for" loops.											 |
-|																	 |
-|		for (int variable ; condition ; variable++)					 |
-|		{															 |
-|			code to repeat as long as the condition is true			 |
-|		}															 |
-|																	 |
-|====================================================================|
+     |====================================================================|
+     |                                                                    |
+     | Reminder : "for" loops.                                            |
+     |                                                                    |
+     |   for (int variable ; condition ; variable++)                      |
+     |   {                                                                |
+     |     code to repeat as long as the condition is true                |
+     |   }                                                                |
+     |                                                                    |
+     |====================================================================|
 
 
 
