@@ -31,9 +31,12 @@ echo "alias resetgame='$game_path/scripts/resetgame.sh'" >> ~/.zshrc
 echo "alias setlanguage='$game_path/scripts/setlanguage.sh'" >> ~/.zshrc
 echo "alias help='$game_path/scripts/help.sh'" >> ~/.zshrc
 
+echo "Configuring language..."
 ./scripts/setlanguage.sh $language
 
-
+echo "Configuring VIM editor..."
+echo "set number" >> ~/.vimrc
+echo "syntax on" >> ~/.vimrc
 
 echo "Initializing game..."
 rm -rf src/player_function.c 2>&1 > /dev/null
