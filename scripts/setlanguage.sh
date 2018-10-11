@@ -5,15 +5,15 @@ cd $game_path
 
 if [[ -z "$1" ]]
 then
-	echo -n "What language should be installed ? (en/fr) : "
+	echo -n "en / fr / nl ? : "
 	read language
 else
 	language=$1
 fi
 
-while [[ "$language" != "en" && "$language" != "fr" ]]
+while [[ "$language" != "en" && "$language" != "fr" && "$language" != "nl" ]]
 do
-	echo -n "Please choose only between 'en' or 'fr' : "
+	echo -n "en / fr / nl ? : "
 	read language
 done
 
@@ -27,6 +27,9 @@ then
 elif [[ "$language" == "fr" ]]
 then
 	echo "La langue est maintenant configurée en français"
+elif [[ "$language" == "nl" ]]
+then
+	echo "Het spel is nu in het nerderlands"
 fi
 
 lvl=$(cat data/current_level)
