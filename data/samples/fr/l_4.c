@@ -1,25 +1,26 @@
-/* 
- * Ceci est un commentaire. Tout ce que vous ecrivez dans ce
- * fichier sera utiliser contre vous, mais tout n'est pas utile
- * pour aider Archimede a sortir du labyrinthe. Tout au long
- * de l'aventure vous apprendrez de nouveau concept de programmation,
- * ici il s'agit du commentaire.
- *
- * Le commentaire est utiliser afin de donner des explications
- * sur le code que vous ecrivez a d'autre developper, afin
- * de les aider a comprendre votre code.
- *
- * Vous pouvez supprimer plusieurs ligne a la fois dans vim.
- * Pour ce faire il suffit d'ecrire le nombre de ligne suivit
- * de 'dd' (n'oublier pas de quitter le mode --INSERT--)
- * (par exemple : 18dd)
- *
- */
+/*
+**	Depuis que tu as commence, tu as pu voir des lignes qui commencent par des
+**	etoiles. Ca s'appelle des COMMENTAIRES.
+**
+**	Les commentaires sont tres utiles pour expliquer ton code, mais ils n'ont
+**	aucun effet sur celui-ci. Ca signifie aussi que tu peux les supprimer si tu
+**	as trop de lignes dans ton fichier...
+**
+**	Il y a deux types de commentaires en C. Tu peux en voir un exemple de chaque
+**	ci-dessous.
+**/
 
 #include "game_functions.h"
 void player_function()
 {
-	walk(LEFT);
+	/*
+	** Ceci est un commentaire multi-lignes ou "de bloc".
+	** Ils sont utilises pour les longs commentaires
+	*/
+
+	// Ceci est un simple commentaire de ligne
+
+	walk(LEFT); // Ils peuvent aussi etre places apres les instructions
 	walk(LEFT);
 	walk(LEFT);
 	walk(LEFT);

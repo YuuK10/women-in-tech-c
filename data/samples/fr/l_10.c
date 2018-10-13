@@ -1,11 +1,10 @@
 #include "game_functions.h"
 
 /*
-**	Une boucle est un bout de code qui repete une instruction
-**	ou des instruction tant que la condition est correcte ou
-**	que la condition deviennent fausse.
+**	Une boucle est un bout de code qui se repete tant qu'une condition est
+**	verifiee.
 **
-**	On ecrit une boucle de la maniere suivante :
+**	On peut l'ecrire comme ceci :
 **	while (condition)
 **	{
 **		code to execute
