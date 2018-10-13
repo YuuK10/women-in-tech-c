@@ -59,3 +59,18 @@ FOR LOOPS
   {
     code to execute
   }
+
+VIM COMMANDS
+============
+
+IN INSERT MODE
+--------------
+ESC		Get out of INSERT mode
+
+OUT OF INSERT MODE
+------------------
+ESC		Quit INSERT mode
+:x		Save and quit
+dd		Delete one line
+Xdd		Delete X lines
+u		Undo

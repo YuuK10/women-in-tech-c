@@ -60,3 +60,19 @@ BOUCLES FOR
   {
     code à exécuter
   }
+
+
+VIM COMMANDS
+============
+
+IN INSERT MODE
+--------------
+ESC		Sortir du mode INSERT
+
+OUT OF INSERT MODE
+------------------
+ESC		Quitter le mode INSERT
+:x		Sauvegarder et quitter
+dd		Supprimer une ligne
+Xdd		Supprimer X lignes
+u		Revenir en arriere
